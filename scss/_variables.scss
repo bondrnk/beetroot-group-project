@@ -1,0 +1,18 @@
+// Colors
+$c-white: #fff;
+
+// Fonts
+$f-helvetica: "", sans-serif;
+$f-avenir: "", sans-serif;
+
+// Font size
+$fs-base: 16;
+
+// Transition
+$t-normal: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+
+// Box Shadow
+// TODO change color
+$bs-button: 0px 5px 5px 0px rgba($c-white, 0.1);
+// TODO change color
+$bs-container: 0px 4px 4px 0px rgba($c-white, 0.4);
