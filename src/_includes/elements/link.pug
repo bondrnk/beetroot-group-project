@@ -1,0 +1,17 @@
+mixin link(args)
+  - let href = args.href || '#';
+  - let button = args.button || false;
+  - let buttonColor = args.buttonColor || 'white';
+  - let text = args.text || 'Default link text';
+  - let lightText = args.lightText || false;
+  - let endIcon = args.endIcon || false;
+  - let classList = `${(button ? 'e-link--button' + ' ' + (buttonColor ? 'e-link--button-' + buttonColor : '') : '') + ' ' + (lightText ? 'e-link--lighter-text' : '')}`
+
+  a.e-link(href=href class=classList)
+    span= text 
+
+    //- Arrow svg
+    if endIcon
+      svg.e-link__svg.icon
+        use(xlink:href="#icon-arrow")
+

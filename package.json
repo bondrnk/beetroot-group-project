@@ -1,0 +1,27 @@
+{
+  "name": "homework-14-15-16-17",
+  "version": "1.0.0",
+  "description": "Beetroot academy homeworks",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bondrnk/beetroot-academy"
+  },
+  "scripts": {
+    "scss": "node-sass --watch scss -o ."
+  },
+  "keywords": [
+    "beetroot-academy",
+    "homeworks"
+  ],
+  "author": "hanna bondarenko hanna.bondarenko.s@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bondrnk/beetroot-academy"
+  },
+  "homepage": "https://github.com/bondrnk/beetroot-academy#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.1",
+    "node-sass": "^6.0.1"
+  }
+}
