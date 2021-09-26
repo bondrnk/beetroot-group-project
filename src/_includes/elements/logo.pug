@@ -1,0 +1,12 @@
+mixin logo(args)
+  - let logoLink = args.link || 'icon-logo';
+  - let logoClass = args.class || 'icon';
+  - let svgName = args.name || 'default';
+  - let logoText = args.text || 'default'
+
+      a(href=logoLink class=logoClass)
+        svg(class="icon-" + svgName)
+          use(xlink:href="../../../assets/icon/logo/logo.svg#" + svgName)
+
+      a(href=logoLink class=logoText)
+        span Beetrooters 

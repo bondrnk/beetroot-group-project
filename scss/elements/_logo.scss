@@ -1,0 +1,11 @@
+.e-logo{
+  @include size(75);
+  display: block;
+
+  &__text{
+    color: $c-white;
+  }
+  &--white{
+    fill: $c-white;
+  }
+}
