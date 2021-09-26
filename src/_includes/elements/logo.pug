@@ -6,7 +6,7 @@ mixin logo(args)
 
     a(href=logoLink class=logoClass)
       svg(class="icon-" + svgName)
-        use(xlink:href="#icon-logo")
+        use(xlink:href="#" + svgName)
 
     a(href=logoLink class=logoText)
       span Beetrooters 
