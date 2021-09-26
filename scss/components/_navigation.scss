@@ -8,12 +8,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
   }
   &__item{
    min-width: 70px;
    height: 40px;
    text-align: center;
+   padding-left: 10px;
 
    
   
