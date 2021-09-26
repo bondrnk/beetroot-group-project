@@ -4,9 +4,9 @@ mixin logo(args)
   - let svgName = args.name || 'default';
   - let logoText = args.text || 'default'
 
-      a(href=logoLink class=logoClass)
-        svg(class="icon-" + svgName)
-          use(xlink:href="#icon-logo")
+    a(href=logoLink class=logoClass)
+      svg(class="icon-" + svgName)
+        use(xlink:href="#icon-logo")
 
-      a(href=logoLink class=logoText)
-        span Beetrooters 
+    a(href=logoLink class=logoText)
+      span Beetrooters 

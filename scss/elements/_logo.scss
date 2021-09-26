@@ -2,7 +2,7 @@
   @include size(75);
   display: block;
   animation: rotate 20s infinite linear;
-  >svg {
+  > svg {
     display: block;
   }
   &__text {
