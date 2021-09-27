@@ -96,12 +96,45 @@ svg {
   width: 75px;
   height: 75px;
   display: block;
+  -webkit-animation: rotate 20s infinite linear;
+          animation: rotate 20s infinite linear;
+}
+
+.e-logo > svg {
+  display: block;
 }
 .e-logo__text {
   color: #fff;
 }
 .e-logo--white {
   fill: #fff;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.icon {
+  height: 100%;
+  width: 100%;
 }
 
 .e-link {
@@ -111,7 +144,7 @@ svg {
 }
 .e-link--lighter-text {
   color: white;
-  padding: 10px;
+  padding: 11px;
 }
 .e-link--lighter-text:hover {
   border-radius: 5px;
@@ -201,11 +234,19 @@ svg {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
 }
 .c-navigation__item {
   min-width: 70px;
   height: 40px;
   text-align: center;
+  padding-left: 10px;
 }
 
 .c-banner {
