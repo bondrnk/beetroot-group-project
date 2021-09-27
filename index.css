@@ -1,13 +1,13 @@
 @font-face {
   font-family: "sen-bold";
-  src: url("../assets/fonts/sen-bold/Sen-Bold.woff2") format("woff2"), url("../assets/fonts/sen-bold/Sen-Bold.woff") format("woff");
+  src: url("../assets/fonts/sen/Sen-Bold.woff2") format("woff2"), url("../assets/fonts/sen/Sen-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "sen-regular";
-  src: url("../assets/fonts/sen-regular/Sen-Regular.woff2") format("woff2"), url("../assets/fonts/sen-regular/Sen-Regular.woff") format("woff");
+  src: url("../assets/fonts/sen/Sen-Regular.woff2") format("woff2"), url("../assets/fonts/sen/Sen-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -198,4 +198,53 @@ svg {
   min-width: 70px;
   height: 40px;
   text-align: center;
+}
+
+.c-section.c-section-about {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.c-section-about__us {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 390px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c-about__info {
+  width: 130px;
+  height: 130px;
+}
+
+.c-section-about__us.section-about__us-name {
+  font-family: "sen-regular";
+  font-weight: 700;
+  margin-top: 30px;
+}
+
+p.about-text {
+  font-family: "sen-regular";
+  text-align: center;
+  font-weight: 400;
+  margin-top: 20px;
 }

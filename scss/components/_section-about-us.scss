@@ -1,0 +1,34 @@
+// Перша обгортка секції в ряд з переносом
+.c-section.c-section-about{
+    flex-direction: row;
+    align-items: center;
+    color: $c-black;
+    flex-wrap: wrap;
+    display:flex;
+    width: 100%;
+  }
+  // Друга секція в колонку
+  .c-section-about__us{
+    flex-direction: column;
+    align-items: center;
+    max-width: 390px;
+    display:flex;
+  }
+
+  // Фото команди
+.c-about__info{
+    width: 130px;
+    height: 130px;
+  }  
+  //  
+.c-section-about__us.section-about__us-name{
+    font-family: "sen-regular";
+    font-weight: 700;
+    margin-top: 30px;
+    }
+p.about-text{
+    font-family: "sen-regular";
+    text-align: center;
+    font-weight: 400;
+    margin-top: 20px;
+  }
