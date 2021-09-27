@@ -1,0 +1,475 @@
+@font-face {
+  font-family: "sen-bold";
+  src: url("../assets/fonts/sen/Sen-Bold.woff2") format("woff2"), url("../assets/fonts/sen/Sen-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "sen-regular";
+  src: url("../assets/fonts/sen/Sen-Regular.woff2") format("woff2"), url("../assets/fonts/sen/Sen-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #fff;
+  font-size: 16px;
+  font-family: "", sans-serif;
+  color: #fff;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke: currentColor;
+  fill: currentColor;
+}
+.icon:not(.has-stroke) {
+  stroke-width: 0;
+}
+
+*::-moz-selection {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+*::selection {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+*::-webkit-scrollbar {
+  border-radius: 10px;
+  position: relative;
+  z-index: 999;
+  width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  outline: none;
+}
+
+.wrapper {
+  max-width: 1200px;
+  padding: 0 50px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img,
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+.e-logo {
+  width: 75px;
+  height: 75px;
+  display: block;
+}
+.e-logo__text {
+  color: #fff;
+}
+.e-logo--white {
+  fill: #fff;
+}
+
+.e-link {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.e-link--lighter-text {
+  color: white;
+  padding: 10px;
+}
+.e-link--lighter-text:hover {
+  border-radius: 5px;
+  background-color: #000;
+}
+
+.e-button {
+  background-color: transparent;
+  border: 1px solid #fff;
+  margin-bottom: 115px;
+  border-radius: 5px;
+  padding: 5px 25px;
+  cursor: pointer;
+  outline: none;
+}
+.e-button:hover {
+  background-color: #f2505d;
+}
+
+.e-social-link {
+  width: 35px;
+  height: 35px;
+  margin: 25px 10px;
+  color: #fff;
+}
+.e-social-link__link {
+  font-size: 30px;
+}
+.e-social-link:hover {
+  color: #f2505d;
+}
+
+.c-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #f25252;
+}
+.c-header__wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.c-header__logo {
+  height: 75px;
+  width: 150px;
+  display: block;
+}
+.c-header__logo__wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-footer {
+  min-height: 200px;
+  background-color: #222222;
+}
+.c-footer__wrapper {
+  max-width: 1300px;
+  padding: 0 50px;
+  margin: 0 auto;
+  width: 100%;
+}
+.c-footer__top {
+  padding-top: 25px;
+}
+
+.c-navigation {
+  width: 100%;
+  max-width: 1200px;
+  height: 50px;
+}
+.c-navigation__wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.c-navigation__item {
+  min-width: 70px;
+  height: 40px;
+  text-align: center;
+}
+
+.c-banner {
+  background-image: url("./assets/images/banner1.jpg");
+  background-size: cover;
+  background-position: center center;
+  margin-top: 100px;
+}
+.c-banner__wrapper {
+  max-width: 1300px;
+  padding: 0 50px;
+  margin: 0 auto;
+  width: 100%;
+}
+.c-banner__block {
+  width: 35%;
+}
+.c-banner__main-title {
+  font-family: "sen-bold";
+  font-size: 62px;
+  line-height: 1.3;
+  margin: 150px 0 20px;
+}
+.c-banner__sub-title {
+  font-family: "sen-regular";
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+@font-face {
+  font-family: "sen-bold";
+  src: url("../assets/fonts/sen/Sen-Bold.woff2") format("woff2"), url("../assets/fonts/sen/Sen-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "sen-regular";
+  src: url("../assets/fonts/sen/Sen-Regular.woff2") format("woff2"), url("../assets/fonts/sen/Sen-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #fff;
+  font-size: 16px;
+  font-family: "", sans-serif;
+  color: #fff;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke: currentColor;
+  fill: currentColor;
+}
+.icon:not(.has-stroke) {
+  stroke-width: 0;
+}
+
+*::-moz-selection {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+*::selection {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+*::-webkit-scrollbar {
+  border-radius: 10px;
+  position: relative;
+  z-index: 999;
+  width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  outline: none;
+}
+
+.wrapper {
+  max-width: 1200px;
+  padding: 0 50px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img,
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+.e-logo {
+  width: 75px;
+  height: 75px;
+  display: block;
+}
+.e-logo__text {
+  color: #fff;
+}
+.e-logo--white {
+  fill: #fff;
+}
+
+.e-link {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.e-link--lighter-text {
+  color: white;
+  padding: 10px;
+}
+.e-link--lighter-text:hover {
+  border-radius: 5px;
+  background-color: #000;
+}
+
+.e-button {
+  background-color: transparent;
+  border: 1px solid #fff;
+  margin-bottom: 115px;
+  border-radius: 5px;
+  padding: 5px 25px;
+  cursor: pointer;
+  outline: none;
+}
+.e-button:hover {
+  background-color: #f2505d;
+}
+
+.e-social-link {
+  width: 35px;
+  height: 35px;
+  margin: 25px 10px;
+  color: #fff;
+}
+.e-social-link__link {
+  font-size: 30px;
+}
+.e-social-link:hover {
+  color: #f2505d;
+}
+
+.c-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #f25252;
+}
+.c-header__wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.c-header__logo {
+  height: 75px;
+  width: 150px;
+  display: block;
+}
+.c-header__logo__wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-footer {
+  min-height: 200px;
+  background-color: #222222;
+}
+.c-footer__wrapper {
+  max-width: 1300px;
+  padding: 0 50px;
+  margin: 0 auto;
+  width: 100%;
+}
+.c-footer__top {
+  padding-top: 25px;
+}
+
+.c-navigation {
+  width: 100%;
+  max-width: 1200px;
+  height: 50px;
+}
+.c-navigation__wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.c-navigation__item {
+  min-width: 70px;
+  height: 40px;
+  text-align: center;
+}
+
+.c-banner {
+  background-image: url("./assets/images/banner1.jpg");
+  background-size: cover;
+  background-position: center center;
+  margin-top: 100px;
+}
+.c-banner__wrapper {
+  max-width: 1300px;
+  padding: 0 50px;
+  margin: 0 auto;
+  width: 100%;
+}
+.c-banner__block {
+  width: 35%;
+}
+.c-banner__main-title {
+  font-family: "sen-bold";
+  font-size: 62px;
+  line-height: 1.3;
+  margin: 150px 0 20px;
+}
+.c-banner__sub-title {
+  font-family: "sen-regular";
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
