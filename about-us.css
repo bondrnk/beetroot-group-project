@@ -1,12 +1,14 @@
 @font-face {
   font-family: "sen-bold";
-  src: url("../assets/fonts/sen/Sen-Bold.woff2") format("woff2"), url("../assets/fonts/sen/Sen-Bold.woff") format("woff");
+  src: url("../assets/fonts/sen/Sen-Bold.woff2") format("woff2"),
+    url("../assets/fonts/sen/Sen-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "sen-regular";
-  src: url("../assets/fonts/sen/Sen-Regular.woff2") format("woff2"), url("../assets/fonts/sen/Sen-Regular.woff") format("woff");
+  src: url("../assets/fonts/sen/Sen-Regular.woff2") format("woff2"),
+    url("../assets/fonts/sen/Sen-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -104,6 +106,28 @@ svg {
   fill: #fff;
 }
 
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.icon {
+  height: 100%;
+  width: 100%;
+}
+
 .e-link {
   width: 100%;
   height: 100%;
@@ -111,7 +135,7 @@ svg {
 }
 .e-link--lighter-text {
   color: white;
-  padding: 10px;
+  padding: 11px;
 }
 .e-link--lighter-text:hover {
   border-radius: 5px;
@@ -152,6 +176,7 @@ svg {
   width: 100%;
   height: 100px;
   background-color: #f25252;
+  z-index: 10;
 }
 .c-header__wrapper {
   height: 100%;
@@ -200,12 +225,48 @@ svg {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
 }
 .c-navigation__item {
   min-width: 70px;
   height: 40px;
   text-align: center;
+  padding-left: 10px;
+}
+
+.section-establishment {
+  padding: 165px 0;
+}
+.section-establishment__wrapper {
+  font-family: "sen-regular";
+  max-width: 1300px;
+  display: flex;
+}
+.section-establishment__media {
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 5px;
+  margin: 50px 0;
+  color: black;
+  padding: 15px;
+  z-index: 2;
+}
+.section-establishment__media-text {
+  padding: 20px 0 10px;
+}
+.section-establishment__meet {
+  padding: 85px 50px 85px 225px;
+  background-color: black;
+  margin-left: -175px;
+  border-radius: 5px;
+  color: white;
+  z-index: 1;
+}
+.section-establishment__meet-title {
+  font-family: "sen-bold";
+  font-size: 32px;
+}
+.section-establishment__meet-text {
+  padding-bottom: 10px;
 }
 
 .c-banner {
@@ -238,13 +299,15 @@ svg {
 
 @font-face {
   font-family: "sen-bold";
-  src: url("../assets/fonts/sen/Sen-Bold.woff2") format("woff2"), url("../assets/fonts/sen/Sen-Bold.woff") format("woff");
+  src: url("../assets/fonts/sen/Sen-Bold.woff2") format("woff2"),
+    url("../assets/fonts/sen/Sen-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "sen-regular";
-  src: url("../assets/fonts/sen/Sen-Regular.woff2") format("woff2"), url("../assets/fonts/sen/Sen-Regular.woff") format("woff");
+  src: url("../assets/fonts/sen/Sen-Regular.woff2") format("woff2"),
+    url("../assets/fonts/sen/Sen-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -334,12 +397,30 @@ svg {
   width: 75px;
   height: 75px;
   display: block;
+  -webkit-animation: rotate 20s infinite linear;
+  animation: rotate 20s infinite linear;
+}
+.e-logo > svg {
+  display: block;
 }
 .e-logo__text {
   color: #fff;
 }
 .e-logo--white {
   fill: #fff;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.icon {
+  height: 100%;
+  width: 100%;
 }
 
 .e-link {
@@ -349,7 +430,7 @@ svg {
 }
 .e-link--lighter-text {
   color: white;
-  padding: 10px;
+  padding: 11px;
 }
 .e-link--lighter-text:hover {
   border-radius: 5px;
@@ -390,6 +471,7 @@ svg {
   width: 100%;
   height: 100px;
   background-color: #f25252;
+  z-index: 10;
 }
 .c-header__wrapper {
   height: 100%;
@@ -438,12 +520,48 @@ svg {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
 }
 .c-navigation__item {
   min-width: 70px;
   height: 40px;
   text-align: center;
+  padding-left: 10px;
+}
+
+.section-establishment {
+  padding: 165px 0;
+}
+.section-establishment__wrapper {
+  font-family: "sen-regular";
+  max-width: 1300px;
+  display: flex;
+}
+.section-establishment__media {
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 5px;
+  margin: 50px 0;
+  color: black;
+  padding: 15px;
+  z-index: 2;
+}
+.section-establishment__media-text {
+  padding: 20px 0 10px;
+}
+.section-establishment__meet {
+  padding: 85px 50px 85px 225px;
+  background-color: black;
+  margin-left: -175px;
+  border-radius: 5px;
+  color: white;
+  z-index: 1;
+}
+.section-establishment__meet-title {
+  font-family: "sen-bold";
+  font-size: 32px;
+}
+.section-establishment__meet-text {
+  padding-bottom: 10px;
 }
 
 .c-banner {
