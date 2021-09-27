@@ -1,0 +1,9 @@
+mixin text(args)
+  - let infoClass = args.infoClass ;
+  - let infoHeader = args.infoHeader;
+  - let infoText = args.infoText;
+
+
+  h2(class="e-info__header " + infoClass) #{infoHeader}
+  
+  p(class="e-info__text " + infoClass) #{infoText}

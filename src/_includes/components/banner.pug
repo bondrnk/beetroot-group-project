@@ -1,0 +1,28 @@
+mixin banner(args)
+  - let src = args.src ;
+  - let alt = args.alt ;
+  - let infoClass = args.infoClass ;
+  - let infoHeader = args.infoHeader;
+  - let infoText = args.infoText;
+
+  .c-banner 
+    .c-banner__wrapper
+      +image({
+        src,
+        alt
+      })
+      .c-banner__info  
+        .c-banner__info__wrapper 
+          +text({
+            infoClass,
+            infoHeader,
+            infoText
+          })
+      .c-banner__button 
+        .c-banner__button__wrapper
+          +link({
+            href: './index.html',
+            button: false,
+            text: 'Home',
+            lightText: true
+          })

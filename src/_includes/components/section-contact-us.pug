@@ -1,0 +1,16 @@
+mixin section-contact-us(args)
+  - let src = args.src;
+  - let alt = args.alt;
+  - let infoClass = args.class;
+  - let infoHeader = args.infoHeader;
+  - let infoText = args.infoText;
+
+
+  .c-section-contact-us
+    +banner({
+        src: '../../../assets/images/section-contact-us.jpg',
+        alt: 'hello sign',
+        class: '--flex-end',
+        infoHeader: 'Need Help?',
+        infoText: "Need help or assistance? Our team is standing by to make sure you get the help you need. Whether you need to adjust an order or delivery details, we're ready to help!"
+    })
