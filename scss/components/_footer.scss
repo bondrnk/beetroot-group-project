@@ -1,0 +1,12 @@
+.c-footer {
+  min-height: 200px;
+  background-color: $c-light-dark;
+
+  &__wrapper {
+    @include containerGlobal;
+  }
+
+  &__top {
+    padding-top: 25px;
+  }
+}
