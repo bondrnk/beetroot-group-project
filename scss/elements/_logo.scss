@@ -12,6 +12,7 @@
     fill: $c-white;
   }
 }
+// TODO Винести в окремий файл keyframes
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
