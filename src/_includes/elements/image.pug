@@ -1,0 +1,6 @@
+mixin image(args)
+  - let src = args.src || '';
+  - let alt = args.alt || 'default image';
+
+  .e-image
+    img(src=src, alt=alt)

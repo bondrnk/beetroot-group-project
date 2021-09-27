@@ -1,11 +1,22 @@
-.e-logo{
+.e-logo {
   @include size(75);
   display: block;
-
-  &__text{
+  animation: rotate 20s infinite linear;
+  > svg {
+    display: block;
+  }
+  &__text {
     color: $c-white;
   }
-  &--white{
+  &--white {
     fill: $c-white;
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
