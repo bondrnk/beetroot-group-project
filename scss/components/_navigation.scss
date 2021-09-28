@@ -1,21 +1,18 @@
-.c-navigation{
+.c-navigation {
   width: 100%;
   max-width: 1200px;
   height: 50px;
-  &__wrapper{
+  &__wrapper {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
   }
-  &__item{
-   min-width: 70px;
-   height: 40px;
-   text-align: center;
-
-   
-  
+  &__item {
+    min-width: 70px;
+    height: 40px;
+    text-align: center;
+    padding-left: 10px;
   }
 }

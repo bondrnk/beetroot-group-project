@@ -1,34 +1,53 @@
 // Перша обгортка секції в ряд з переносом
 .c-section.c-section-about{
+    justify-content: center;
     flex-direction: row;
     align-items: center;
+    margin-top: 100px;
     color: $c-black;
     flex-wrap: wrap;
     display:flex;
     width: 100%;
   }
+  .c-section-about--first{
+    flex-direction: row;
+    display:flex;
+    
+  }
+  .c-section-about--second{
+    flex-direction: row;
+    display:flex;
+    
+  }
+  .c-section-about--third{
+    flex-direction: row;
+    display:flex;
+    
+  }
+  .c-section-about--fourth{
+    flex-direction: row;
+    display:flex;
+    
+  }
   // Друга секція в колонку
   .c-section-about__us{
     flex-direction: column;
     align-items: center;
-    max-width: 390px;
+    margin-left: 10px;
+    // max-width: 390px;
+    margin: 10px;
     display:flex;
   }
-
-  // Фото команди
-.c-about__info{
-    width: 130px;
-    height: 130px;
-  }  
-  //  
-.c-section-about__us.section-about__us-name{
+  .section-about__us-name{
     font-family: "sen-regular";
-    font-weight: 700;
-    margin-top: 30px;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
     }
-p.about-text{
-    font-family: "sen-regular";
-    text-align: center;
-    font-weight: 400;
-    margin-top: 20px;
-  }
+  .e-image.section-about__photo{
+    display: flex;
+    max-width: 210px;
+}
+    
+ 

@@ -101,6 +101,12 @@ svg {
   width: 75px;
   height: 75px;
   display: block;
+  -webkit-animation: rotate 20s infinite linear;
+          animation: rotate 20s infinite linear;
+}
+
+.e-logo > svg {
+  display: block;
 }
 
 .e-logo__text {
@@ -111,6 +117,33 @@ svg {
   fill: #fff;
 }
 
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.icon {
+  height: 100%;
+  width: 100%;
+}
+
 .e-link {
   width: 100%;
   height: 100%;
@@ -119,7 +152,7 @@ svg {
 
 .e-link--lighter-text {
   color: white;
-  padding: 10px;
+  padding: 11px;
 }
 
 .e-link--lighter-text:hover {
@@ -191,16 +224,19 @@ svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 10px;
 }
 
 .c-navigation__item {
   min-width: 70px;
   height: 40px;
   text-align: center;
+  padding-left: 10px;
 }
 
 .c-section.c-section-about {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -208,6 +244,7 @@ svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 100px;
   color: #000;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -215,6 +252,46 @@ svg {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+}
+
+.c-section-about--first {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c-section-about--second {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c-section-about--third {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c-section-about--fourth {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c-section-about__us {
@@ -225,26 +302,24 @@ svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 390px;
+  margin-left: 10px;
+  margin: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c-about__info {
-  width: 130px;
-  height: 130px;
+.section-about__us-name {
+  font-family: "sen-regular";
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 10px;
 }
 
-.c-section-about__us.section-about__us-name {
-  font-family: "sen-regular";
-  font-weight: 700;
-  margin-top: 30px;
-}
-
-p.about-text {
-  font-family: "sen-regular";
-  text-align: center;
-  font-weight: 400;
-  margin-top: 20px;
+.e-image.section-about__photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 210px;
 }

@@ -1,33 +1,73 @@
   //- Перша обгортка секції
 .c-section.c-section-about
   //-Друга обгортка для колонок 
-  .c-section-about__us
-    img(src="../../../assets/img/girl01.png" alt="girl01").c-about__info
-    .c-section-about__us.section-about__us-name Anna Bondarenko
-    p.about-text Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum nisi, hic eligendi fuga sed recusandae earum qui voluptatem, illum facere suscipit. Nisi cumque obcaecati modi in quis commodi, cupiditate dolore.  
+  .c-section.c-section-about--first   
+    .c-section-about__us
+      .e-image.section-about__photo
+        +image({
+          src: '../../../assets/img/ann.png',
+          alt: 'girl'
+         })
+      .c-section-about__us.section-about__us-name Anna Bondarenko
+      
       //- Друга колонка
-  .c-section-about__us
-    img(src="../../../assets/img/boy02.png" alt="girl01").c-about__info
-    .c-section-about__us.section-about__us-name Dmytro Fedin
-    p.about-text Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum nisi, hic eligendi fuga sed recusandae earum qui voluptatem, illum facere suscipit. Nisi cumque obcaecati modi in quis commodi, cupiditate dolore.  
+    .c-section-about__us
+      .e-image.section-about__photo
+        +image({
+          src: '../../../assets/img/dmytro.png',
+          alt: 'boy'
+         })
+      .c-section-about__us.section-about__us-name Dmytro Fedin
+      
       //- Третя колонка
-  .c-section-about__us
-    img(src="../../../assets/img/girl01.png" alt="girl01").c-about__info
-    .c-section-about__us.section-about__us-name Serhii Trytenko
-    p.about-text Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum nisi, hic eligendi fuga sed recusandae earum qui voluptatem, illum facere suscipit. Nisi cumque obcaecati modi in quis commodi, cupiditate dolore.  
-  .c-section-about__us
-    img(src="../../../assets/img/girl01.png" alt="girl01").c-about__info
-    .c-section-about__us.section-about__us-name Tatjana Bezkorovaina
-    p.about-text Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum nisi, hic eligendi fuga sed recusandae earum qui voluptatem, illum facere suscipit. Nisi cumque obcaecati modi in quis commodi, cupiditate dolore.
-  .c-section-about__us
-    img(src="../../../assets/img/girl01.png" alt="girl01").c-about__info
-    .c-section-about__us.section-about__us-name Pavlo Baliasnikov
-    p.about-text Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum nisi, hic eligendi fuga sed recusandae earum qui voluptatem, illum facere suscipit. Nisi cumque obcaecati modi in quis commodi, cupiditate dolore.  
-  .c-section-about__us
-    img(src="../../../assets/img/girl01.png" alt="girl01").c-about__info
-    .c-section-about__us.section-about__us-name Aleksei Pavlenko
-    p.about-text Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum nisi, hic eligendi fuga sed recusandae earum qui voluptatem, illum facere suscipit. Nisi cumque obcaecati modi in quis commodi, cupiditate dolore.  
-  .c-section-about__us
-    img(src="../../../assets/img/girl01.png" alt="girl01").c-about__info
-    .c-section-about__us.section-about__us-name Anastasiia Shtepa
-    p.about-text Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum nisi, hic eligendi fuga sed recusandae earum qui voluptatem, illum facere suscipit. Nisi cumque obcaecati modi in quis commodi, cupiditate dolore.    
+  .c-section.c-section-about--second  
+    .c-section-about__us
+      .e-image.section-about__photo
+        +image({
+          src: '../../../assets/img/shtepa+.png',
+          alt: 'boy'
+        })
+      .c-section-about__us.section-about__us-name Serhii Trytenko
+      
+    .c-section-about__us
+      .e-image.section-about__photo
+        +image({
+          src: '../../../assets/img/tatjana.png',
+          alt: 'boy'
+        })
+      .c-section-about__us.section-about__us-name Tatjana Bezkorovaina
+      
+  .c-section.c-section-about--third    
+    .c-section-about__us
+      .e-image.section-about__photo
+        +image({
+          src: '../../../assets/img/pavlo.png',
+          alt: 'boy'
+        })
+      .c-section-about__us.section-about__us-name Pavlo Baliasnikov
+      
+    .c-section-about__us
+      .e-image.section-about__photo
+        +image({
+          src: '../../../assets/img/alex.png',
+          alt: 'boy'
+        })
+      .c-section-about__us.section-about__us-name Aleksei Pavlenko
+      
+  .c-section.c-section-about--fourth    
+    .c-section-about__us
+      .e-image.section-about__photo
+        +image({
+          src: '../../../assets/img/shtepa+.png',
+          alt: 'boy'
+        })
+      .c-section-about__us.section-about__us-name Anastasiia Shtepa
+      
+    .c-section-about__us
+      .e-image.section-about__photo
+        +image({
+          src: '../../../assets/img/shtepa+.png',
+          alt: 'boy'
+        })
+      .c-section-about__us.section-about__us-name Vitaly Liuklian
+      
