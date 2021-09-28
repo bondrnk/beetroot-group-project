@@ -1,19 +1,21 @@
 .c-banner {
   @include backgroundCoverCenter;
   min-height: 550px;
+  padding: 100px 0;
 
   &__wrapper {
     @include containerGlobal;
   }
 
   &__info {
-    width: 35%;
+    max-width: 420px;
+    width: 100%;
 
     &__main-title {
       font-family: "sen-bold";
       font-size: $fs-h1 + px;
       line-height: $lh-base;
-      margin: 150px 0 20px;
+      margin: 0 0 20px;
     }
 
     &__sub-title {
@@ -21,6 +23,21 @@
       font-size: $fs-sub + px;
       line-height: $lh-big;
       margin-bottom: 30px;
+    }
+  }
+
+  .more-width {
+
+    .c-banner__info {
+      max-width: 550px;
+
+      &__main-title {
+        font-size: $fs-h2 + px;
+      }
+
+      &__sub-title {
+        max-width: 420px;
+      }
     }
   }
 }
