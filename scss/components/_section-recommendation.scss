@@ -1,0 +1,60 @@
+.section-recommendation {
+
+    padding: 165px 0;
+
+    //section-recommendation = WRAPPER
+    &__wrapper {
+        font-family: "sen-regular";
+        display: flex;
+    }
+    
+    //section-recommendation = WHITE BLOCK
+    //use for client photo only
+    &__clrecphoto {
+        // padding: 85px 50px 85px 225px;
+        margin: 20px 0;
+        z-index: 2;
+        display: flex;
+        width: 30%;
+        // width: 80%;
+        justify-content: flex-end;
+        border-radius: 10px;
+        // background-color: red;
+        // min-height: 200px;
+    }
+
+    //section-recommendation = BLACK BLOCK
+    //use for recommendation text (incl. Client Name; Project & Recommendation Date; Recommendation Text)
+    &__clrecmain {
+        padding: 85px 50px 85px 225px;
+        margin-left: -115px;
+        z-index: 1;
+        width: 80%;
+        justify-content: flex-end;
+        border-radius: 10px;
+        background-color: black;
+        color: white;
+    }
+
+    //section-recommendation = Client Name
+    //adjusts client name display settings
+    &__clrecname {
+        font-family: "sen-bold";
+        size: 28px;
+    }
+
+    //section-recommendation = Project & Recommendation Date 
+    //adjusts project name and recommendation date display settings
+    &__clrecprdt {
+        font-family: "sen-regular";
+        size: 8px;
+        color: gray;
+    }
+
+    //section-recommendation = Recommendation Text 
+    //adjusts recommendation text display settings
+    &__clrectext {
+        font-family: "sen-regular";
+        size: 11px;
+    }
+}
