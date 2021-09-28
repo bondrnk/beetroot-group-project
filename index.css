@@ -277,10 +277,10 @@ svg {
 }
 
 .c-banner {
-  background-image: url("./assets/images/banner1.jpg");
   background-size: cover;
   background-position: center center;
   min-height: 550px;
+  padding: 100px 0;
 }
 
 .c-banner__wrapper {
@@ -291,38 +291,34 @@ svg {
 }
 
 .c-banner__info {
-  width: 35%;
-}
-
-.c-banner__info__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  max-width: 420px;
   width: 100%;
 }
 
-.c-banner__info__wrapper--flex-end {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-.c-banner__info__info__main-title {
+.c-banner__info__main-title {
   font-family: "sen-bold";
   font-size: 62px;
   line-height: 1.3;
-  margin: 150px 0 20px;
+  margin: 0 0 20px;
 }
 
-.c-banner__info__info__sub-title {
+.c-banner__info__sub-title {
   font-family: "sen-regular";
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 30px;
+}
+
+.c-banner .more-width .c-banner__info {
+  max-width: 550px;
+}
+
+.c-banner .more-width .c-banner__info__main-title {
+  font-size: 45px;
+}
+
+.c-banner .more-width .c-banner__info__sub-title {
+  max-width: 420px;
 }
 
 .section-establishment {

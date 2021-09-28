@@ -1,20 +1,19 @@
 mixin banner(args)
-  - let infoClass = args.infoClass ;
   - let infoHeader = args.infoHeader;
+  - let infoClass = args.infoClass ;
   - let infoText = args.infoText;
   - let style = args.style;
+  - let src = args.src ;
+  - let alt = args.alt ;
 
-  .c-banner(style=style)
-    .c-banner__wrapper
+  .c-banner(style=style, alt=alt)
+    div(class="c-banner__wrapper d-flex" + infoClass)
       .c-banner__info
-        .c-banner__info__wrapper(class='c-banner__info' + infoClass) 
-          h2.c-banner__info__main-title=infoHeader
-          p.c-banner__info__sub-title=infoText
-      .c-banner__button 
-        .c-banner__button__wrapper
-          +link({
-            href: './index.html',
-            button: true,
-            text: 'Home',
-            buttonColor: 'white'
-          })
+        h2.c-banner__info__main-title.d-inline-block=infoHeader
+        h4.c-banner__info__sub-title.d-inline-block=infoText
+        +link({
+          href: './index.html',
+          lightText: true,
+          button: false,
+          text: 'Read Our Statement',
+        })

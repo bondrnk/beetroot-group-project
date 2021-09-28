@@ -1,33 +1,24 @@
 .c-banner {
-  background-image: url('./assets/images/banner1.jpg');
   @include backgroundCoverCenter;
   min-height: 550px;
+  padding: 100px 0;
 
   &__wrapper {
     @include containerGlobal;
   }
 
   &__info {
-    width: 35%;
+    max-width: 420px;
+    width: 100%;
 
-    &__wrapper{
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-
-      &--flex-end{
-        align-items: flex-end;
-      }
-    }
-
-    &__info__main-title {
+    &__main-title {
       font-family: "sen-bold";
       font-size: $fs-h1 + px;
       line-height: $lh-base;
-      margin: 150px 0 20px;
+      margin: 0 0 20px;
     }
-  
-    &__info__sub-title {
+
+    &__sub-title {
       font-family: "sen-regular";
       font-size: $fs-sub + px;
       line-height: $lh-big;
@@ -35,4 +26,18 @@
     }
   }
 
+  .more-width {
+
+    .c-banner__info {
+      max-width: 550px;
+
+      &__main-title {
+        font-size: $fs-h2 + px;
+      }
+
+      &__sub-title {
+        max-width: 420px;
+      }
+    }
+  }
 }
