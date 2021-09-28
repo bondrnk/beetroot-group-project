@@ -1,10 +1,16 @@
 .c-banner {
   @include backgroundCoverCenter;
   min-height: 550px;
-  padding: 100px 0;
+  display: flex;
+  // background-position: 0px 0px, 50% 50%;
+
+  @include media ('<phone') {
+    background-position: 0px 0px, 80% 50%;
+  }
 
   &__wrapper {
     @include containerGlobal;
+    margin: 100px auto 0 auto;
   }
 
   &__info {

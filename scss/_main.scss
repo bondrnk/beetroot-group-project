@@ -72,6 +72,9 @@ body {
 
 a {
   text-decoration: none;
+  &:hover{
+    color: $c-white;
+  }
 }
 
 ul{
