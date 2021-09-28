@@ -1,7 +1,8 @@
 mixin navigation()
 
-  nav.c-navigation 
-    ul.c-navigation__wrapper 
+  nav.c-navigation
+    ul.c-navigation__wrapper
+
       li.c-navigation__item 
         +link({
           href: './index.html',
@@ -9,24 +10,19 @@ mixin navigation()
           text: 'Home',
           lightText: true
         })
+
       li.c-navigation__item 
         +link({
-          href: './index.html',
+          href: './about-us.html',
           button: false,
-          text: 'Home',
+          text: 'About us',
           lightText: true
         })
+
       li.c-navigation__item 
         +link({
-          href: './index.html',
+          href: './contact.html',
           button: false,
-          text: 'Home',
-          lightText: true
-        })
-      li.c-navigation__item 
-        +link({
-          href: './index.html',
-          button: false,
-          text: 'Home',
+          text: 'Contact',
           lightText: true
         })
