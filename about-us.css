@@ -1,14 +1,12 @@
 @font-face {
   font-family: "sen-bold";
-  src: url("../assets/fonts/sen/Sen-Bold.woff2") format("woff2"),
-    url("../assets/fonts/sen/Sen-Bold.woff") format("woff");
+  src: url("../assets/fonts/sen/Sen-Bold.woff2") format("woff2"), url("../assets/fonts/sen/Sen-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "sen-regular";
-  src: url("../assets/fonts/sen/Sen-Regular.woff2") format("woff2"),
-    url("../assets/fonts/sen/Sen-Regular.woff") format("woff");
+  src: url("../assets/fonts/sen/Sen-Regular.woff2") format("woff2"), url("../assets/fonts/sen/Sen-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -74,7 +72,7 @@ body {
 }
 
 .wrapper {
-  max-width: 1200px;
+  max-width: 1300px;
   padding: 0 50px;
   margin: 0 auto;
   width: 100%;
@@ -97,6 +95,11 @@ svg {
 .e-logo {
   width: 75px;
   height: 75px;
+  display: block;
+  -webkit-animation: rotate 20s infinite linear;
+          animation: rotate 20s infinite linear;
+}
+.e-logo > svg {
   display: block;
 }
 .e-logo__text {
@@ -233,6 +236,34 @@ svg {
   padding-left: 10px;
 }
 
+.c-banner {
+  background-image: url("./assets/images/banner1.jpg");
+  background-size: cover;
+  background-position: center center;
+  margin-top: 100px;
+}
+.c-banner__wrapper {
+  max-width: 1300px;
+  padding: 0 50px;
+  margin: 0 auto;
+  width: 100%;
+}
+.c-banner__block {
+  width: 35%;
+}
+.c-banner__main-title {
+  font-family: "sen-bold";
+  font-size: 62px;
+  line-height: 1.3;
+  margin: 150px 0 20px;
+}
+.c-banner__sub-title {
+  font-family: "sen-regular";
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
 .section-establishment {
   padding: 165px 0;
 }
@@ -270,45 +301,15 @@ svg {
   padding-bottom: 10px;
 }
 
-.c-banner {
-  background-image: url("./assets/images/banner1.jpg");
-  background-size: cover;
-  background-position: center center;
-  margin-top: 100px;
-}
-.c-banner__wrapper {
-  max-width: 1300px;
-  padding: 0 50px;
-  margin: 0 auto;
-  width: 100%;
-}
-.c-banner__block {
-  width: 35%;
-}
-.c-banner__main-title {
-  font-family: "sen-bold";
-  font-size: 62px;
-  line-height: 1.3;
-  margin: 150px 0 20px;
-}
-.c-banner__sub-title {
-  font-family: "sen-regular";
-  font-size: 18px;
-  line-height: 1.5;
-  margin-bottom: 30px;
-}
-
 @font-face {
   font-family: "sen-bold";
-  src: url("../assets/fonts/sen/Sen-Bold.woff2") format("woff2"),
-    url("../assets/fonts/sen/Sen-Bold.woff") format("woff");
+  src: url("../assets/fonts/sen/Sen-Bold.woff2") format("woff2"), url("../assets/fonts/sen/Sen-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "sen-regular";
-  src: url("../assets/fonts/sen/Sen-Regular.woff2") format("woff2"),
-    url("../assets/fonts/sen/Sen-Regular.woff") format("woff");
+  src: url("../assets/fonts/sen/Sen-Regular.woff2") format("woff2"), url("../assets/fonts/sen/Sen-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -374,7 +375,7 @@ body {
 }
 
 .wrapper {
-  max-width: 1200px;
+  max-width: 1300px;
   padding: 0 50px;
   margin: 0 auto;
   width: 100%;
@@ -399,7 +400,7 @@ svg {
   height: 75px;
   display: block;
   -webkit-animation: rotate 20s infinite linear;
-  animation: rotate 20s infinite linear;
+          animation: rotate 20s infinite linear;
 }
 .e-logo > svg {
   display: block;
@@ -529,6 +530,34 @@ svg {
   padding-left: 10px;
 }
 
+.c-banner {
+  background-image: url("./assets/images/banner1.jpg");
+  background-size: cover;
+  background-position: center center;
+  margin-top: 100px;
+}
+.c-banner__wrapper {
+  max-width: 1300px;
+  padding: 0 50px;
+  margin: 0 auto;
+  width: 100%;
+}
+.c-banner__block {
+  width: 35%;
+}
+.c-banner__main-title {
+  font-family: "sen-bold";
+  font-size: 62px;
+  line-height: 1.3;
+  margin: 150px 0 20px;
+}
+.c-banner__sub-title {
+  font-family: "sen-regular";
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
 .section-establishment {
   padding: 165px 0;
 }
@@ -564,32 +593,4 @@ svg {
 }
 .section-establishment__meet-text {
   padding-bottom: 10px;
-}
-
-.c-banner {
-  background-image: url("./assets/images/banner1.jpg");
-  background-size: cover;
-  background-position: center center;
-  margin-top: 100px;
-}
-.c-banner__wrapper {
-  max-width: 1300px;
-  padding: 0 50px;
-  margin: 0 auto;
-  width: 100%;
-}
-.c-banner__block {
-  width: 35%;
-}
-.c-banner__main-title {
-  font-family: "sen-bold";
-  font-size: 62px;
-  line-height: 1.3;
-  margin: 150px 0 20px;
-}
-.c-banner__sub-title {
-  font-family: "sen-regular";
-  font-size: 18px;
-  line-height: 1.5;
-  margin-bottom: 30px;
 }
