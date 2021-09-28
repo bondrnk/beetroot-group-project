@@ -1,0 +1,18 @@
+mixin footer()
+  .c-footer
+    .c-footer__wrapper
+      .c-footer__top.d-flex.justify-content-between
+        .logo
+          .logo__wrapper.d-flex.align-items-center
+            +logo({
+              link: ' ./index.html',
+              class: 'e-logo e-logo--white',
+              name: 'logo',
+              text: 'e-logo__text' 
+            })
+        .social-link
+          +social-link({href:"https://twitter.com/?lang=ru", icon: "fa-twitter", target: "_blank"})
+          +social-link({href:"https://facebook.com", icon: "fa-facebook", target: "_blank"})
+          +social-link({href:"https://www.instagram.com/", icon: "fa-instagram", target: "_blank"})
+      .c-footer__bot.text-center
+        p.c-footer__bot__text Made in Beetroot. &#169;2021.
