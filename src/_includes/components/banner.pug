@@ -1,6 +1,4 @@
 mixin banner(args)
-  - let src = args.src ;
-  - let alt = args.alt ;
   - let infoClass = args.infoClass ;
   - let infoHeader = args.infoHeader;
   - let infoText = args.infoText;
@@ -8,16 +6,15 @@ mixin banner(args)
 
   .c-banner(style=style)
     .c-banner__wrapper
-
-      .c-banner__info  
-        .c-banner__info__wrapper 
-          h2(class="e-info__header " + infoClass)=infoHeader
-          p(class="e-info__text " + infoClass)=infoText
+      .c-banner__info
+        .c-banner__info__wrapper(class='c-banner__info' + infoClass) 
+          h2.c-banner__info__main-title=infoHeader
+          p.c-banner__info__sub-title=infoText
       .c-banner__button 
         .c-banner__button__wrapper
           +link({
             href: './index.html',
-            button: false,
+            button: true,
             text: 'Home',
-            lightText: true
+            buttonColor: 'white'
           })
