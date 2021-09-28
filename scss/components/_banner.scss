@@ -1,27 +1,26 @@
 .c-banner {
-  background-image: url('./assets/images/banner1.jpg');
   @include backgroundCoverCenter;
-  margin-top: 100px;
+  min-height: 550px;
 
   &__wrapper {
     @include containerGlobal;
   }
 
-  &__block {
+  &__info {
     width: 35%;
-  }
 
-  &__main-title {
-    font-family: "sen-bold";
-    font-size: $fs-h1 + px;
-    line-height: $lh-base;
-    margin: 150px 0 20px;
-  }
+    &__main-title {
+      font-family: "sen-bold";
+      font-size: $fs-h1 + px;
+      line-height: $lh-base;
+      margin: 150px 0 20px;
+    }
 
-  &__sub-title {
-    font-family: "sen-regular";
-    font-size: $fs-sub + px;
-    line-height: $lh-big;
-    margin-bottom: 30px;
+    &__sub-title {
+      font-family: "sen-regular";
+      font-size: $fs-sub + px;
+      line-height: $lh-big;
+      margin-bottom: 30px;
+    }
   }
 }

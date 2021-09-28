@@ -1,6 +1,7 @@
 .c-footer {
-  min-height: 200px;
   background-color: $c-light-dark;
+  min-height: 200px;
+  min-width: 1920px;
 
   &__wrapper {
     @include containerGlobal;

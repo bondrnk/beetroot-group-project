@@ -72,7 +72,7 @@ body {
 }
 
 .wrapper {
-  max-width: 1200px;
+  max-width: 1300px;
   padding: 0 50px;
   margin: 0 auto;
   width: 100%;
@@ -92,6 +92,10 @@ svg {
   height: 100%;
 }
 
+.l-common {
+  padding-top: 100px;
+}
+
 .e-logo {
   width: 75px;
   height: 75px;
@@ -99,7 +103,6 @@ svg {
   -webkit-animation: rotate 20s infinite linear;
           animation: rotate 20s infinite linear;
 }
-
 .e-logo > svg {
   display: block;
 }
@@ -112,26 +115,21 @@ svg {
 
 @-webkit-keyframes rotate {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 @keyframes rotate {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
-
 .icon {
   height: 100%;
   width: 100%;
@@ -185,6 +183,7 @@ svg {
   width: 100%;
   height: 100px;
   background-color: #f25252;
+  z-index: 800;
 }
 .c-header__wrapper {
   height: 100%;
@@ -209,8 +208,9 @@ svg {
 }
 
 .c-footer {
-  min-height: 200px;
   background-color: #222222;
+  min-height: 200px;
+  min-width: 1920px;
 }
 .c-footer__wrapper {
   max-width: 1300px;
@@ -233,14 +233,6 @@ svg {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-
 }
 .c-navigation__item {
   min-width: 70px;
@@ -250,10 +242,9 @@ svg {
 }
 
 .c-banner {
-  background-image: url("./assets/images/banner1.jpg");
   background-size: cover;
   background-position: center center;
-  margin-top: 100px;
+  min-height: 550px;
 }
 .c-banner__wrapper {
   max-width: 1300px;
@@ -261,16 +252,16 @@ svg {
   margin: 0 auto;
   width: 100%;
 }
-.c-banner__block {
+.c-banner__info {
   width: 35%;
 }
-.c-banner__main-title {
+.c-banner__info__main-title {
   font-family: "sen-bold";
   font-size: 62px;
   line-height: 1.3;
   margin: 150px 0 20px;
 }
-.c-banner__sub-title {
+.c-banner__info__sub-title {
   font-family: "sen-regular";
   font-size: 18px;
   line-height: 1.5;
