@@ -1,10 +1,18 @@
 mixin header()
 
-  header.c-header 
-    .c-header__wrapper 
+  header.c-header
+    .c-header__wrapper.wrapper
+
+      //- Logo
       .c-header__logo
         .c-header__logo__wrapper                                
           +logo({
             whiteMode: true,
           })
+
+      //- Navigation list
       +navigation()
+
+      //- Burger menu
+      .c-header__burger-menu
+        +burger-menu()

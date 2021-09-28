@@ -1,12 +1,14 @@
 @font-face {
-  font-family: "sen-bold";
-  src: url("../assets/fonts/sen/Sen-Bold.woff2") format("woff2"), url("../assets/fonts/sen/Sen-Bold.woff") format("woff");
+  font-family: "Sen-Bold";
+  src: url("../assets/fonts/sen/Sen-Bold.woff2") format("woff2"),
+    url("../assets/fonts/sen/Sen-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
-  font-family: "sen-regular";
-  src: url("../assets/fonts/sen/Sen-Regular.woff2") format("woff2"), url("../assets/fonts/sen/Sen-Regular.woff") format("woff");
+  font-family: "Sen-Regular";
+  src: url("../assets/fonts/sen/Sen-Regular.woff2") format("woff2"),
+    url("../assets/fonts/sen/Sen-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }

@@ -12,15 +12,14 @@
     height: 100%;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
     margin: 0 auto;
   }
   &__logo {
-    height: 75px;
-    width: 150px;
+    height: 100%;
     display: block;
+    width: 200px;
 
     &__wrapper {
       width: 100%;
