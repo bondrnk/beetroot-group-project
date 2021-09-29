@@ -1,0 +1,13 @@
+.e-social-link {
+  @include size(35);
+  margin: 25px 10px;
+  color: $c-white;
+
+  &__link {
+    font-size: $fs-soc-icon + px;
+  }
+
+  &:hover {
+    color: $c-light-pink;
+  }
+}

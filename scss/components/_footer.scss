@@ -1,0 +1,20 @@
+.c-footer {
+  min-height: 200px;
+  background-color: $c-shadowy;
+
+  &__wrapper {
+    @include containerGlobal;
+  }
+  &__logo{
+    width: 200px;
+    height: 75px;
+
+    &__wrapper{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__top {
+    padding-top: 25px;
+  }
+}

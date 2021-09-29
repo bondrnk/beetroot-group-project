@@ -1,0 +1,19 @@
+mixin banner(args)
+  - let infoHeader = args.infoHeader;
+  - let infoClass = args.infoClass ;
+  - let infoText = args.infoText;
+  - let style = args.style;
+  - let src = args.src ;
+  - let alt = args.alt ;
+
+  .c-banner(style=style, alt=alt)
+    div(class="c-banner__wrapper d-flex" + infoClass)
+      .c-banner__info
+        h2.c-banner__info__main-title.d-inline-block=infoHeader
+        h4.c-banner__info__sub-title.d-inline-block=infoText
+        +link({
+          href: './index.html',
+          lightText: true,
+          button: false,
+          text: 'Contact Support',
+        })
