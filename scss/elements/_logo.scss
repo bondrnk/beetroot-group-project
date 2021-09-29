@@ -1,12 +1,16 @@
 .e-logo {
-  @include size(75);
   display: block;
   animation: rotate 20s infinite linear;
   > svg {
+    width: 75px;
     display: block;
+    margin-right: 5px;
   }
   &__text {
     color: $c-white;
+    font-family: $f-sen-bold;
+    font-size: em(12);
+    letter-spacing: 4px;
   }
   &--white {
     fill: $c-white;

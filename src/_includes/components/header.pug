@@ -1,7 +1,9 @@
 mixin header()
 
-  header.c-header 
-    .c-header__wrapper 
+  header.c-header
+    .c-header__wrapper.wrapper
+
+      //- Logo
       .c-header__logo
         .c-header__logo__wrapper                                
           +logo({
@@ -10,4 +12,10 @@ mixin header()
             name: 'logo',
             text: 'e-logo__text'
           })
+
+      //- Navigation list
       +navigation()
+
+      //- Burger menu
+      .c-header__burger-menu
+        +burger-menu()
