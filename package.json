@@ -22,7 +22,7 @@
   "homepage": "https://github.com/bondrnk/group-project#readme",
   "dependencies": {
     "bootstrap": "^5.1.1",
-    "node-sass": "^6.0.1",
+    "compass-mixins": "^0.12.10",
     "simptip": "^1.0.4"
   }
 }
