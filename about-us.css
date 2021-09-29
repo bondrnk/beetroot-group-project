@@ -356,6 +356,12 @@ svg {
   padding: 0 35px;
   margin-bottom: 15px;
 }
+@media (max-width: 1023px) {
+  .section-advantages__column {
+    flex: 1 0 50%;
+    min-width: 250px;
+  }
+}
 
 .item-advantages__icon {
   margin-bottom: 15px;
