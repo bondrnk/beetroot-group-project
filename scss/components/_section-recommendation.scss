@@ -40,14 +40,14 @@
     //adjusts client name display settings
     &__clrecname {
         font-family: "sen-bold";
-        size: 28px;
+        size: 45px;
     }
 
     //section-recommendation = Project & Recommendation Date 
     //adjusts project name and recommendation date display settings
     &__clrecprdt {
         font-family: "sen-regular";
-        size: 8px;
+        size: 16px;
         color: gray;
     }
 
@@ -55,6 +55,6 @@
     //adjusts recommendation text display settings
     &__clrectext {
         font-family: "sen-regular";
-        size: 11px;
+        size: 16px;
     }
 }

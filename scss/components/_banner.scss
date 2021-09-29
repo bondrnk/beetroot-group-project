@@ -1,0 +1,27 @@
+.c-banner {
+  background-image: url("./assets/images/banner1.jpg");
+  @include backgroundCoverCenter;
+  margin-top: 75px;
+
+  &__wrapper {
+    @include containerGlobal;
+  }
+
+  &__block {
+    width: 35%;
+  }
+
+  &__main-title {
+    font-family: "Sen-Bold";
+    font-size: $fs-h1 + px;
+    line-height: $lh-base;
+    margin: 150px 0 20px;
+  }
+
+  &__sub-title {
+    font-family: "Sen-Regular";
+    font-size: $fs-sub + px;
+    line-height: $lh-big;
+    margin-bottom: 30px;
+  }
+}

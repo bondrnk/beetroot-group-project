@@ -1,0 +1,13 @@
+.e-button {
+  background-color: transparent;
+  border: 1px solid $c-white;
+  margin-bottom: 115px;
+  border-radius: 5px;
+  padding: 5px 25px;
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+    background-color: $c-light-pink;
+  }
+}
