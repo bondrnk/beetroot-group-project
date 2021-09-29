@@ -1,15 +1,23 @@
-mixin banner(args)
+// TODO add ||
+// TODO rename to 'panel'
+mixin banner(args={})
   - let infoHeader = args.infoHeader;
+  // TODO Delete (Changed to js condition)
   - let infoClass = args.infoClass ;
+  - let rightMode = args.rightMode || false;
   - let infoText = args.infoText;
   - let style = args.style;
   - let src = args.src ;
   - let alt = args.alt ;
 
+  // TODO delete alt
   .c-banner(style=style, alt=alt)
-    div(class="c-banner__wrapper d-flex" + infoClass)
+    .c-banner__wrapper.d-flex(class=`${rightMode ? 'c-banner__wrapper--right-mode' : ''}`)
+      // TODO delete class .c-banner__info
       .c-banner__info
+        // TODO rename to .c-banner__title
         h2.c-banner__info__main-title.d-inline-block=infoHeader
+        // TODO rename to .c-banner__subtitle
         h4.c-banner__info__sub-title.d-inline-block=infoText
         +link({
           href: './index.html',
