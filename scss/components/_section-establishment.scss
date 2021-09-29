@@ -1,0 +1,41 @@
+.section-establishment {
+  padding: 165px 0;
+
+  &__wrapper {
+    font-family: "sen-regular";
+    max-width: 1300px;
+    display: flex;
+  }
+  
+  &__media {
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 5px;
+    margin: 50px 0;
+    color: black;
+    padding: 15px;
+    z-index: 2;
+
+    &-text {
+      padding: 20px 0 10px;
+    }
+  }
+
+  &__meet {
+    padding: 85px 50px 85px 225px;
+    background-color: black;
+    margin-left: -175px;
+    border-radius: 5px;
+    color: white;
+    z-index: 1;
+
+    &-title {
+      font-family: "sen-bold";
+      font-size: 32px;
+    }
+
+    &-text {
+      padding-bottom: 10px;
+    }
+  }
+}
