@@ -623,7 +623,7 @@ body {
     background-size: 200px 200px; } }
 
 .wave {
-  background-image: url("../../assets/images/red.jpeg");
+  background-image: url("./assets/images/red.jpeg");
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
