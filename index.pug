@@ -3,8 +3,21 @@ extends ./src/_extends/common
 block title 
   title Home
 
+block style 
+  style(type="text/css").
+    #page {
+      display: none
+    }
+    #loading {
+      display: block
+    }
+
+block loading 
+  +loading()
+
 block content
   +header()
   +banner()
+  +section-advantages()
   +section-establishment()
   +footer()
