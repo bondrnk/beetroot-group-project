@@ -5,17 +5,17 @@ mixin header()
 
       //- Logo
       .c-header__logo
+        // TODO delete wrapper
         .c-header__logo__wrapper                                
           +logo({
-            link: './index.html',
-            class: 'e-logo e-logo--white',
-            name: 'logo',
-            text: 'e-logo__text'
+            whiteMode: true,
           })
 
       //- Navigation list
+      // TODO add wrapper
       +navigation()
 
       //- Burger menu
+      // TODO move to navigation
       .c-header__burger-menu
         +burger-menu()

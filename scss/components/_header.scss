@@ -14,14 +14,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    // TODO move to global wrapper
     margin: 0 auto;
   }
-
   &__logo {
+    // TODO improve height and display
     height: 100%;
     display: block;
+    width: 200px;
 
     &__wrapper {
+      // TODO move all styles to wrapper
       width: 100%;
       height: 100%;
       display: flex;
