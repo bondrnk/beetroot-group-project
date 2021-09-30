@@ -1,36 +1,23 @@
 // Перша обгортка секції в ряд з переносом
-.c-section.c-section-about{
+.c-section-about-us{
+  margin-top: 100px;
+  color: $c-black;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  
+  &__wrapper{
     justify-content: center;
-    flex-direction: row;
     align-items: center;
-    margin-top: 100px;
-    color: $c-black;
+    flex-direction: row;
     flex-wrap: wrap;
     display:flex;
-    width: 100%;
-  }
-  .c-section-about--first{
-    flex-direction: row;
-    display:flex;
-    
-  }
-  .c-section-about--second{
-    flex-direction: row;
-    display:flex;
-    
-  }
-  .c-section-about--third{
-    flex-direction: row;
-    display:flex;
-    
-  }
-  .c-section-about--fourth{
-    flex-direction: row;
-    display:flex;
-    
-  }
+    }
+  
+  
+  
   // Друга секція в колонку
-  .c-section-about__us{
+    &__info-item{
     flex-direction: column;
     align-items: center;
     margin-left: 10px;
@@ -38,16 +25,16 @@
     margin: 10px;
     display:flex;
   }
-  .section-about__us-name{
+    &__name{
     font-family: "sen-regular";
     font-style: italic;
     font-size: 20px;
     font-weight: 600;
     margin-top: 10px;
     }
-  .e-image.section-about__photo{
+  &__photo{
     display: flex;
     max-width: 210px;
 }
     
- 
+}

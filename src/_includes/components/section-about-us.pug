@@ -1,74 +1,71 @@
-  mixin section-about-us()
-      //- Перша обгортка секції
-    .c-section.c-section-about
-      //-Друга обгортка для колонок 
-      .c-section.c-section-about--first   
-        .c-section-about__us
-          .e-image.section-about__photo
-            +image({
-              src: '../../../assets/img/ann.png',
-              alt: 'girl'
-            })
-          .c-section-about__us.section-about__us-name Anna Bondarenko
-          
-          //- Друга колонка
-        .c-section-about__us
-          .e-image.section-about__photo
-            +image({
-              src: '../../../assets/img/dmytro.png',
-              alt: 'boy'
-            })
-          .c-section-about__us.section-about__us-name Dmytro Fedin
-          
-          //- Третя колонка
-      .c-section.c-section-about--second  
-        .c-section-about__us
-          .e-image.section-about__photo
-            +image({
-              src: '../../../assets/img/sergii.png',
-              alt: 'boy'
-            })
-          .c-section-about__us.section-about__us-name Serhii Trytenko
-          
-        .c-section-about__us
-          .e-image.section-about__photo
-            +image({
-              src: '../../../assets/img/tatjana.png',
-              alt: 'boy'
-            })
-          .c-section-about__us.section-about__us-name Tatjana Bezkorovaina
-          
-      .c-section.c-section-about--third    
-        .c-section-about__us
-          .e-image.section-about__photo
-            +image({
-              src: '../../../assets/img/pavlo.png',
-              alt: 'boy'
-            })
-          .c-section-about__us.section-about__us-name Pavlo Baliasnikov
-          
-        .c-section-about__us
-          .e-image.section-about__photo
-            +image({
-              src: '../../../assets/img/alex.png',
-              alt: 'boy'
-            })
-          .c-section-about__us.section-about__us-name Aleksei Pavlenko
-          
-      .c-section.c-section-about--fourth    
-        .c-section-about__us
-          .e-image.section-about__photo
-            +image({
-              src: '../../../assets/img/shtepa+.png',
-              alt: 'boy'
-            })
-          .c-section-about__us.section-about__us-name Anastasiia Shtepa
-          
-        .c-section-about__us
-          .e-image.section-about__photo
-            +image({
-              src: '../../../assets/img/vitalii.png',
-              alt: 'boy'
-            })
-          .c-section-about__us.section-about__us-name Vitaly Liuklian
-      
+mixin section-about-us()
+  .c-section-about-us   
+    .c-section-about-us__wrapper  
+      .c-section-about-us__info-item
+        .c-section-about-us__photo
+          +image({
+            src: '../../../assets/img/ann.png',
+            alt: 'girl'
+          })
+        .c-section-about-us__name Anna Bondarenko
+
+        //- Друга колонка
+      .c-section-about-us__info-item
+        .c-section-about-us__photo
+          +image({
+            src: '../../../assets/img/dmytro.png',
+            alt: 'boy'
+          })
+        .c-section-about-us__name Dmytro Fedin
+
+        //- Третя колонка
+
+      .c-section-about-us__info-item
+        .c-section-about-us__photo
+          +image({
+            src: '../../../assets/img/sergii.png',
+            alt: 'boy'
+          })
+        .c-section-about-us__name Serhii Trytenko
+
+      .c-section-about-us__info-item
+        .c-section-about-us__photo
+          +image({
+            src: '../../../assets/img/tatjana.png',
+            alt: 'boy'
+          })
+        .c-section-about-us__name Tatjana Bezkorovaina
+
+
+      .c-section-about-us__info-item
+        .c-section-about-us__photo
+          +image({
+            src: '../../../assets/img/pavlo.png',
+            alt: 'boy'
+          })
+        .c-section-about-us__name Pavlo Baliasnikov
+
+      .c-section-about-us__info-item
+        .c-section-about-us__photo
+          +image({
+            src: '../../../assets/img/alex.png',
+            alt: 'boy'
+          })
+        .c-section-about-us__name Aleksei Pavlenko
+
+
+      .c-section-about-us__info-item
+        .c-section-about-us__photo
+          +image({
+            src: '../../../assets/img/shtepa+.png',
+            alt: 'boy'
+          })
+        .c-section-about-us__name Anastasiia Shtepa
+
+      .c-section-about-us__info-item
+        .c-section-about-us__photo
+          +image({
+            src: '../../../assets/img/vitalii.png',
+            alt: 'boy'
+          })
+        .c-section-about-us__name Vitaly Liuklian
