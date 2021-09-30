@@ -873,12 +873,6 @@ svg {
   display: flex;
 }
 
-@media (max-width: 479px) {
-  .c-banner {
-    background-position: 0px 0px, 80% 50%;
-  }
-}
-
 .c-banner__wrapper {
   max-width: 1300px;
   padding: 0 50px;
