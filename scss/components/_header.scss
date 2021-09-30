@@ -14,12 +14,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // TODO move to global wrapper
+    // TODO move to global wrapper(its already there O_O)
     margin: 0 auto;
   }
 
   &__logo {
-    // TODO improve height and display
     width: 200px;
     display: flex;
     justify-content: center;
