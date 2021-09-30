@@ -1,15 +1,15 @@
 // Перша обгортка секції в ряд з переносом
 .c-section-about-us{
+  justify-content: center;
   margin-top: 100px;
   color: $c-black;
   display: flex;
-  justify-content: center;
   width: 100%;
   
   &__wrapper{
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    max-width: 1300px;
     flex-wrap: wrap;
     display:flex;
     }
@@ -20,20 +20,17 @@
     &__info-item{
     flex-direction: column;
     align-items: center;
-    margin-left: 10px;
-    // max-width: 390px;
     margin: 10px;
     display:flex;
   }
     &__name{
-    font-family: "sen-regular";
+    font-family: $f-sen-bold;
     font-style: italic;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: $fs-sub;
     margin-top: 10px;
     }
   &__photo{
-    display: flex;
+    border-radius: 10%;
     max-width: 210px;
 }
     

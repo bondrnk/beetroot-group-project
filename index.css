@@ -423,14 +423,14 @@ svg {
 }
 
 .c-section-about-us {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 100px;
   color: #000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 100%;
 }
 
@@ -441,10 +441,7 @@ svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  max-width: 1300px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   display: -webkit-box;
@@ -460,7 +457,6 @@ svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 10px;
   margin: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -468,17 +464,14 @@ svg {
 }
 
 .c-section-about-us__name {
-  font-family: "sen-regular";
+  font-family: "Sen-Bold", sans-serif;
   font-style: italic;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 18;
   margin-top: 10px;
 }
 
 .c-section-about-us__photo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  border-radius: 10%;
   max-width: 210px;
 }
 
