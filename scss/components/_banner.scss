@@ -36,6 +36,10 @@
       line-height: $lh-base;
       margin: 0 0 20px;
 
+      @include media ('<tablet'){
+        font-size: em($fs-h2);
+      }
+
       @include media ('<phone'){
         font-size: em($fs-soc-icon);
       }

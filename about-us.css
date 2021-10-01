@@ -972,6 +972,12 @@ svg {
   margin: 0 0 20px;
 }
 
+@media (max-width: 767px) {
+  .c-banner__info__title {
+    font-size: 2.8125em;
+  }
+}
+
 @media (max-width: 479px) {
   .c-banner__info__title {
     font-size: 1.875em;
