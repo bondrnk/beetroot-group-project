@@ -2,10 +2,6 @@
   @include backgroundCoverCenter;
   min-height: 550px;
 
-  @include media("<phone") {
-    background-position: 0px 0px, 80% 50%;
-  }
-
   &__wrapper {
     margin: 130px auto 0 auto;
 
