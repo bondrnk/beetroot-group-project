@@ -1,5 +1,5 @@
 .section-advantages {
-  color: black;
+  color: $c-black;
 
   &__wrapper {
     max-width: 1095px;
@@ -51,7 +51,7 @@
     width: 2.5em;
     height: 2.5em;
     stroke-width: 0;
-    fill: #f25252;
+    fill: $c-light-red;
   }
 
   &__title {
