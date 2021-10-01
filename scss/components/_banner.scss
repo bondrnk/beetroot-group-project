@@ -2,12 +2,7 @@
   @include backgroundCoverCenter;
   min-height: 550px;
   display: flex;
-  // background-position: 0px 0px, 50% 50%;
-
-  @include media ('<phone') {
-    background-position: 0px 0px, 80% 50%;
-  }
-
+  
   &__wrapper {
     @include containerGlobal;
     margin: 100px auto 0 auto;
@@ -24,7 +19,7 @@
       margin: 0 0 20px;
     }
 
-    &__sub-title {
+    &__title {
       font-family: "sen-regular";
       font-size: $fs-sub + px;
       line-height: $lh-big;
