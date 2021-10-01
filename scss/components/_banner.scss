@@ -6,7 +6,7 @@
     margin: 130px auto 0 auto;
 
     @include media ('<phone'){
-      margin: 130px auto 0 auto;
+      margin: 200px auto 20px auto;
     }
 
     &--width-mode {
@@ -44,7 +44,7 @@
     &__sub-title {
       font-family: "Sen-Regular";
         font-family: "Sen-Regular";
-        font-size: $fs-sub + px;
+        font-size: em($fs-sub);
         line-height: $lh-big;
         margin-bottom: 30px;
 

@@ -934,7 +934,7 @@ svg {
 
 @media (max-width: 479px) {
   .c-banner__wrapper {
-    margin: 130px auto 0 auto;
+    margin: 200px auto 20px auto;
   }
 }
 
@@ -971,7 +971,7 @@ svg {
 .c-banner__info__sub-title {
   font-family: "Sen-Regular";
   font-family: "Sen-Regular";
-  font-size: 18px;
+  font-size: 1.125em;
   line-height: 1.5;
   margin-bottom: 30px;
 }
@@ -1297,7 +1297,7 @@ svg {
   padding-bottom: 10px;
 }
 
-.c-section-contact-us {
+.c-banner-contact-us {
   margin-top: 100px;
 }
 
