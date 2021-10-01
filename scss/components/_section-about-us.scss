@@ -13,25 +13,4 @@
     flex-wrap: wrap;
     display:flex;
     }
-  
-  
-  
-  // Друга секція в колонку
-    &__info-item{
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
-    display:flex;
-  }
-    &__name{
-    font-family: $f-sen-bold;
-    font-style: italic;
-    font-size: $fs-sub;
-    margin-top: 10px;
-    }
-  &__photo{
-    border-radius: 10%;
-    max-width: 210px;
-}
-    
 }

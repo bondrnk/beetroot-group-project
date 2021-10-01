@@ -1,71 +1,52 @@
 mixin section-about-us()
   .c-section-about-us   
     .c-section-about-us__wrapper  
-      .c-section-about-us__info-item
-        .c-section-about-us__photo
-          +image({
-            src: '../../../assets/img/ann.png',
-            alt: 'girl'
-          })
-        .c-section-about-us__name Anna Bondarenko
+        +photocard({
+          src: '../../../assets/img/ann.png',
+          alt: 'girl',
+          photoCardName: 'Anna Bondarenko'
+        })
 
         //- Друга колонка
-      .c-section-about-us__info-item
-        .c-section-about-us__photo
-          +image({
-            src: '../../../assets/img/dmytro.png',
-            alt: 'boy'
-          })
-        .c-section-about-us__name Dmytro Fedin
+        +photocard({
+          src: '../../../assets/img/dmytro.png',
+          alt: 'boy',
+          photoCardName: 'Dmytro Fedin'
+        })
 
         //- Третя колонка
+        +photocard({
+          src: '../../../assets/img/sergii.png',
+          alt: 'boy',
+          photoCardName: 'Serhii Trytenko'
+        })
 
-      .c-section-about-us__info-item
-        .c-section-about-us__photo
-          +image({
-            src: '../../../assets/img/sergii.png',
-            alt: 'boy'
-          })
-        .c-section-about-us__name Serhii Trytenko
+        +photocard({
+          src: '../../../assets/img/tatjana.png',
+          alt: 'boy',
+          photoCardName: 'Tatjana Bezkorovaina'
+        })
 
-      .c-section-about-us__info-item
-        .c-section-about-us__photo
-          +image({
-            src: '../../../assets/img/tatjana.png',
-            alt: 'boy'
-          })
-        .c-section-about-us__name Tatjana Bezkorovaina
+        +photocard({
+          src: '../../../assets/img/pavlo.png',
+          alt: 'boy',
+          photoCardName: 'Pavlo Baliasnikov'
+        })
 
+        +photocard({
+          src: '../../../assets/img/alex.png',
+          alt: 'boy',
+          photoCardName: 'Aleksei Pavlenko'
+        })
 
-      .c-section-about-us__info-item
-        .c-section-about-us__photo
-          +image({
-            src: '../../../assets/img/pavlo.png',
-            alt: 'boy'
-          })
-        .c-section-about-us__name Pavlo Baliasnikov
+        +photocard({
+          src: '../../../assets/img/shtepa+.png',
+          alt: 'boy', 
+          photoCardName: 'Anastasiia Shtepa'
+        })
 
-      .c-section-about-us__info-item
-        .c-section-about-us__photo
-          +image({
-            src: '../../../assets/img/alex.png',
-            alt: 'boy'
-          })
-        .c-section-about-us__name Aleksei Pavlenko
-
-
-      .c-section-about-us__info-item
-        .c-section-about-us__photo
-          +image({
-            src: '../../../assets/img/shtepa+.png',
-            alt: 'boy'
-          })
-        .c-section-about-us__name Anastasiia Shtepa
-
-      .c-section-about-us__info-item
-        .c-section-about-us__photo
-          +image({
-            src: '../../../assets/img/vitalii.png',
-            alt: 'boy'
-          })
-        .c-section-about-us__name Vitaly Liuklian
+        +photocard({
+          src: '../../../assets/img/vitalii.png',
+          alt: 'boy', 
+          photoCardName: 'Vitaly Liuklian'
+        })

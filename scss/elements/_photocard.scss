@@ -1,0 +1,23 @@
+.e-photocard{
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  display: flex;
+  flex: 0 0 30%;
+
+  &__name{
+  font-family: $f-sen-bold;
+  font-style: italic;
+  font-size: em($fs-sub);
+  margin-top: 10px;
+  text-align: center;
+
+  @include media ('<tablet'){
+    max-width: 100px;
+  }
+  }
+
+  &__photo{
+  max-width: 210px;
+  }
+}
