@@ -2,10 +2,6 @@
   @include backgroundCoverCenter;
   min-height: 550px;
 
-  @include media("<phone") {
-    background-position: 0px 0px, 80% 50%;
-  }
-
   &__wrapper {
     margin: 130px auto 0 auto;
 
@@ -31,17 +27,34 @@
     width: 100%;
 
     &__main-title {
-      font-family: "sen-bold";
+      font-family: "Sen-Bold";
       font-size: $fs-h1 + px;
       line-height: $lh-base;
       margin: 0 0 20px;
     }
 
-    &__title {
-      font-family: "sen-regular";
-      font-size: $fs-sub + px;
-      line-height: $lh-big;
-      margin-bottom: 30px;
+    &__sub-title {
+      font-family: "Sen-Regular";
+      &__title {
+        font-family: "Sen-Regular";
+        font-size: $fs-sub + px;
+        line-height: $lh-big;
+        margin-bottom: 30px;
+      }
+    }
+
+    .more-width {
+      .c-banner__info {
+        max-width: 550px;
+
+        &__main-title {
+          font-size: $fs-h2 + px;
+        }
+
+        &__sub-title {
+          max-width: 420px;
+        }
+      }
     }
   }
 }
