@@ -4,14 +4,13 @@ mixin header()
     .c-header__wrapper.wrapper
 
       //- Logo
-      .c-header__logo
-        // TODO delete wrapper
-        .c-header__logo__wrapper                                
+      .c-header__logo                         
           +logo({
             whiteMode: true,
           })
 
       //- Navigation list
+<<<<<<< HEAD
       // TODO add wrapper
       +navigation()
 
@@ -19,3 +18,9 @@ mixin header()
       // TODO move to navigation
       .c-header__burger-menu
         +burger-menu()
+=======
+      .c-header__navigation 
+        .c-header__navigation__wrapper
+          +navigation()
+          +burger-menu()
+>>>>>>> 1823e90639af12ad85e0fa8fbca9e445af721ed1
