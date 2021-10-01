@@ -932,6 +932,12 @@ svg {
   margin: 130px auto 0 auto;
 }
 
+@media (max-width: 479px) {
+  .c-banner__wrapper {
+    margin: 130px auto 0 auto;
+  }
+}
+
 .c-banner__wrapper--width-mode .c-banner__info {
   max-width: 535px;
 }
@@ -949,34 +955,55 @@ svg {
   width: 100%;
 }
 
-.c-banner__info__main-title {
+.c-banner__info__title {
   font-family: "Sen-Bold";
-  font-size: 62px;
+  font-size: 3.875em;
   line-height: 1.3;
   margin: 0 0 20px;
 }
 
-.c-banner__info__sub-title {
-  font-family: "Sen-Regular";
+@media (max-width: 479px) {
+  .c-banner__info__title {
+    font-size: 1.875em;
+  }
 }
 
-.c-banner__info__sub-title__title {
+.c-banner__info__sub-title {
+  font-family: "Sen-Regular";
   font-family: "Sen-Regular";
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 30px;
 }
 
-.c-banner__info .more-width .c-banner__info {
+@media (max-width: 479px) {
+  .c-banner__info__sub-title {
+    font-size: 0.8125em;
+  }
+}
+
+.c-banner .more-width .c-banner__info {
   max-width: 550px;
 }
 
-.c-banner__info .more-width .c-banner__info__main-title {
-  font-size: 45px;
+.c-banner .more-width .c-banner__info__main-title {
+  font-size: 2.8125em;
 }
 
-.c-banner__info .more-width .c-banner__info__sub-title {
+@media (max-width: 479px) {
+  .c-banner .more-width .c-banner__info__main-title {
+    font-size: 1.875em;
+  }
+}
+
+.c-banner .more-width .c-banner__info__sub-title {
   max-width: 420px;
+}
+
+@media (max-width: 479px) {
+  .c-banner .more-width .c-banner__info__sub-title {
+    font-size: 0.8125em;
+  }
 }
 
 .c-section-services {
