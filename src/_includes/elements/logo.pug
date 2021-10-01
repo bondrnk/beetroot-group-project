@@ -1,9 +1,7 @@
 mixin logo(args)
-  - let whiteMode = args.whiteMode || false;
 
-
-    a(href='./index.html').e-logo
-      .e-logo__wrapper
-        svg(class="icon icon-logo").e-logo__svg
-          use(xlink:href="#icon-logo")
-        span BEETROOTERS 
+  a(href='./index.html').e-logo
+    .e-logo__wrapper
+      svg(class="icon icon-logo").e-logo__svg
+        use(xlink:href="#icon-logo")
+      span.e-logo__text BEETROOTERS 
