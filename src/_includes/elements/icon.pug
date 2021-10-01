@@ -1,8 +1,7 @@
 mixin icon(args)
   - let svgLink = args.link || 'icon-logo';
-  - let svgClass = args.class || 'icon';
 
 
-    .e-logo
-      svg(class=svgClass)
+    .e-icon.icon
+      svg.e-icon__svg 
         use(xlink:href='#' + svgLink)

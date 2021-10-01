@@ -11,8 +11,8 @@ mixin banner(args={})
   .c-banner.d-flex(style=style)
     .c-banner__wrapper.wrapper.d-flex(class=`${(rightMode ? 'c-banner__wrapper--width-mode text-end justify-content-end' : '') + ' ' + (widthMode ? 'c-banner__wrapper--width-mode' : '')}`)
       .c-banner__info
-        h2.c-banner__title.d-inline-block=infoHeader
-        h4.c-banner__sub-title.d-inline-block=infoText
+        h2.c-banner__info__title.d-inline-block=infoHeader
+        h4.c-banner__info__sub-title.d-inline-block=infoText
         +link({
           href: './index.html',
           lightText: true,

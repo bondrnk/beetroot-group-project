@@ -7,4 +7,5 @@ mixin service-card(args)
     .c-service-card__wrapper 
       span.c-service-card__number=number  
       h2.c-service-card__title=text 
-      +icon({link:'icon-'+svg})
+      .c-service-card__icon
+        +icon({link:'icon-'+svg})

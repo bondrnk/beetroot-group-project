@@ -3,7 +3,7 @@
 setTimeout(() => {
   document.getElementById("page").style.display = "block";
   document.getElementById("loading").style.display = "none";
-}, 3000)
+}, 6000)
 
 // Burger menu
 

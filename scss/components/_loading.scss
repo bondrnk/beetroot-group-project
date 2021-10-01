@@ -14,16 +14,6 @@
   top: 45%;
   bottom: 0;
   display: block;
-
-  @include media("<tablet") {
-    font-size: 60pt;
-    height: 90px;
-  }
-
-  @include media("<phone") {
-    font-size: 40pt;
-    height: 80px;
-  }
 }
 
 .loading-2 {
@@ -42,7 +32,7 @@
   line-height: 12pt;
 }
 .loading-2-text {
-  background-image: url("./assets/images/red.jpeg");
+  background-image: url("../../assets/images/red.jpeg");
   width: 473px;
   height: 97px;
   display: inline-block;
@@ -64,25 +54,15 @@
   }
 }
 .wave {
-  background-image: url("./assets/images/red.jpeg");
+  background-image: url("../../assets/images/red.jpeg");
   @include background-clip(text);
   color: rgba(0, 0, 0, 0);
   text-shadow: 0px 0px rgba(255, 255, 255, 0.06);
   animation: wave-animation 2s infinite linear,
-    loading-animation 5s infinite linear alternate;
+    loading-animation 10s infinite linear alternate;
   background-size: 200px 100px;
   background-repeat: repeat-x;
   opacity: 1;
-
-  @include media("<tablet") {
-    animation: wave-animation 2s infinite linear,
-      loading-animation 7.5s infinite linear alternate;
-  }
-
-  @include media("<phone") {
-    animation: wave-animation 2s infinite linear,
-      loading-animation 10s infinite linear alternate;
-  }
 }
 .wave-2 {
   @include background-clip(initial);
