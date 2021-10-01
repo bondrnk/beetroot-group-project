@@ -1,9 +1,8 @@
 mixin navigation()
 
   nav.c-navigation 
-    .c-navigation__wrapper 
       ul.c-navigation__list
-        li.c-navigation__item 
+        li.c-navigation__item
           +link({
             href: './index.html',
             button: false,
@@ -21,13 +20,6 @@ mixin navigation()
           +link({
             href: './contact.html',
             button: false,
-            text: 'Else',
-            lightText: true
-          })
-        li.c-navigation__item 
-          +link({
-            href: './index.html',
-            button: false,
-            text: 'Home',
+            text: 'Contact',
             lightText: true
           })

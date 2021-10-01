@@ -4,15 +4,13 @@ mixin header()
     .c-header__wrapper.wrapper
 
       //- Logo
-      .c-header__logo
-        .c-header__logo__wrapper                                
+      .c-header__logo                         
           +logo({
             whiteMode: true,
           })
 
       //- Navigation list
-      +navigation()
-
-      //- Burger menu
-      .c-header__burger-menu
-        +burger-menu()
+      .c-header__navigation 
+        .c-header__navigation__wrapper
+          +navigation()
+          +burger-menu()
