@@ -5,7 +5,7 @@
   align-items: center;
   max-width: 1200px;
   padding-top: 65px;
-  color: $c-black;
+  color: $c-darker-grey;
   margin: 0 auto;
   display: flex;
   width: 100%;
@@ -38,7 +38,7 @@
     }
     h2 {
       font-family: "Sen-Bold";
-      font-size: 40px;
+      font-size: 42px;
     }
     &__subtitle {
       max-width: 450px;
@@ -70,13 +70,13 @@
       }
     }
     &__service-card {
-      background-color: $c-black;
+      background-color: $c-darker-grey;
       justify-content: center;
       align-items: center;
-      border-radius: 10px;
+      border-radius: 5px;
       margin-bottom: 50px;
       position: relative;
-      min-height: 350px;
+      min-height: 300px;
       overflow: hidden;
       color: $c-white;
       display: flex;

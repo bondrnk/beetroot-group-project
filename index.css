@@ -749,7 +749,7 @@ svg {
   align-items: center;
   max-width: 1200px;
   padding-top: 65px;
-  color: #000;
+  color: #262626;
   margin: 0 auto;
   display: flex;
   width: 100%; }
@@ -780,7 +780,7 @@ svg {
           margin-bottom: 20px; } }
     .c-section-services__info h2 {
       font-family: "Sen-Bold";
-      font-size: 40px; }
+      font-size: 42px; }
     .c-section-services__info__subtitle {
       max-width: 450px; }
       @media (max-width: 1023px) {
@@ -806,13 +806,13 @@ svg {
           margin-bottom: 40px;
           max-width: 700px; } }
     .c-section-services .c-service-content__service-card {
-      background-color: #000;
+      background-color: #262626;
       justify-content: center;
       align-items: center;
-      border-radius: 10px;
+      border-radius: 5px;
       margin-bottom: 50px;
       position: relative;
-      min-height: 350px;
+      min-height: 300px;
       overflow: hidden;
       color: #fff;
       display: flex;
@@ -921,19 +921,21 @@ svg {
 
 .c-service-card__number {
   position: absolute;
-  left: 15px;
-  top: 15px; }
+  font-size: 0.875em;
+  left: 30px;
+  top: 30px; }
 
 .c-service-card__title {
+  font-size: 0.875em;
   text-align: center; }
 
 .c-service-card__icon {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   padding: 5px;
   position: absolute;
-  right: -50px;
-  bottom: -100px; }
+  right: -40px;
+  bottom: -60px; }
 
 #icon-rectangle {
   fill: none; }
