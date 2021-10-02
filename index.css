@@ -954,6 +954,14 @@ svg {
   top: 45%;
   bottom: 0;
   display: block; }
+  @media (max-width: 767px) {
+    .loading {
+      font-size: 60pt;
+      height: 90px; } }
+  @media (max-width: 479px) {
+    .loading {
+      font-size: 40pt;
+      height: 80px; } }
 
 .loading-2 {
   top: 300px;
@@ -995,10 +1003,16 @@ svg {
   background-clip: text;
   color: rgba(0, 0, 0, 0);
   text-shadow: 0px 0px rgba(255, 255, 255, 0.06);
-  animation: wave-animation 2s infinite linear, loading-animation 10s infinite linear alternate;
+  animation: wave-animation 2s infinite linear, loading-animation 5s infinite linear alternate;
   background-size: 200px 100px;
   background-repeat: repeat-x;
   opacity: 1; }
+  @media (max-width: 767px) {
+    .wave {
+      animation: wave-animation 2s infinite linear, loading-animation 7.5s infinite linear alternate; } }
+  @media (max-width: 479px) {
+    .wave {
+      animation: wave-animation 2s infinite linear, loading-animation 10s infinite linear alternate; } }
 
 .wave-2 {
   -webkit-background-clip: initial;

@@ -23,6 +23,8 @@
   "dependencies": {
     "bootstrap": "^5.1.1",
     "compass-mixins": "^0.12.10",
+    "font-awesome": "^4.7.0",
+    "node-sass": "^6.0.1",
     "simptip": "^1.0.4"
   }
 }
