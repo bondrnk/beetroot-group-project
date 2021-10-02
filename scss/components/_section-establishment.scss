@@ -1,10 +1,19 @@
 .section-establishment {
   padding: 65px 0;
 
+  @include media ('<desktop'){
+    padding: 0;
+  }
+
   &__wrapper {
     font-family: "sen-regular";
     max-width: 1300px;
     display: flex;
+
+    @include media ('<desktop'){
+      padding: 0;
+      flex-direction: column;
+    }
   }
   
   &__media {
@@ -15,6 +24,25 @@
     color: black;
     padding: 15px;
     z-index: 2;
+
+    @include media ('<desktop'){
+     margin: 0;
+     padding: 10px 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+
+     iframe,
+     video {
+       width: 100%;
+
+       &[poster] {
+        height:100%;
+        width:100%;
+       }
+     }
+    }
 
     &-text {
       padding: 20px 0 10px;
@@ -28,6 +56,16 @@
     border-radius: 5px;
     color: white;
     z-index: 1;
+
+    @include media ('<desktop'){
+      margin-left: 0;
+      padding: 85px 45px;
+    }
+
+    @include media ('<phone'){
+      margin-left: 0;
+      padding: 50px 25px;
+    }
 
     &-title {
       font-family: "sen-bold";
