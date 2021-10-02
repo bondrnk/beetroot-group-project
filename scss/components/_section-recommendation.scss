@@ -1,6 +1,7 @@
 .section-recommendation {
 
     padding: 165px 0;
+    flex-direction: column;
 
     //section-recommendation = WRAPPER
     &__wrapper {
@@ -11,16 +12,11 @@
     //section-recommendation = WHITE BLOCK
     //use for client photo only
     &__clrecphoto {
-        // padding: 85px 50px 85px 225px;
         margin: 20px 0;
         z-index: 2;
         display: flex;
         width: 30%;
-        // width: 80%;
-        justify-content: flex-end;
         border-radius: 10px;
-        // background-color: red;
-        // min-height: 200px;
     }
 
     //section-recommendation = BLACK BLOCK
@@ -30,31 +26,30 @@
         margin-left: -115px;
         z-index: 1;
         width: 80%;
-        justify-content: flex-end;
         border-radius: 10px;
-        background-color: black;
-        color: white;
+        background-color: $c-black;
+        color: $c-white;
     }
 
     //section-recommendation = Client Name
     //adjusts client name display settings
-    &__clrecname {
-        font-family: "sen-bold";
+    &__recommendationclient {
+        font-family: $f-sen-bold;
         size: 45px;
     }
 
     //section-recommendation = Project & Recommendation Date 
     //adjusts project name and recommendation date display settings
-    &__clrecprdt {
-        font-family: "sen-regular";
+    &__recommendationdata {
+        font-family: $f-sen-regular;
         size: 16px;
-        color: gray;
+        color: $c-white;
     }
 
     //section-recommendation = Recommendation Text 
     //adjusts recommendation text display settings
-    &__clrectext {
-        font-family: "sen-regular";
+    &__recommendationtext {
+        font-family: $f-sen-regular;
         size: 16px;
     }
 }

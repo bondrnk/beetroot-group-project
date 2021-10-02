@@ -386,6 +386,10 @@ svg {
 
 .section-recommendation {
   padding: 165px 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .section-recommendation__wrapper {
@@ -402,9 +406,6 @@ svg {
   display: -ms-flexbox;
   display: flex;
   width: 30%;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   border-radius: 10px;
 }
 
@@ -413,26 +414,23 @@ svg {
   margin-left: -115px;
   z-index: 1;
   width: 80%;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   border-radius: 10px;
-  background-color: black;
-  color: white;
+  background-color: #000;
+  color: #fff;
 }
 
-.section-recommendation__clrecname {
-  font-family: "sen-bold";
+.section-recommendation__recommendationclient {
+  font-family: "Sen-Bold", sans-serif;
   size: 45px;
 }
 
-.section-recommendation__clrecprdt {
-  font-family: "sen-regular";
+.section-recommendation__recommendationdata {
+  font-family: "Sen-Regular", sans-serif;
   size: 16px;
-  color: gray;
+  color: #fff;
 }
 
-.section-recommendation__clrectext {
-  font-family: "sen-regular";
+.section-recommendation__recommendationtext {
+  font-family: "Sen-Regular", sans-serif;
   size: 16px;
 }

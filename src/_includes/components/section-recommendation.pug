@@ -5,21 +5,24 @@ mixin section-recommendation()
             //Client Photo Only
             //section-recommendation = White Block
             .section-recommendation__clrecphoto
-                img(src='../assets/rec/1.png', alt='Client Photo')
+                +image({
+                    src: '../../assets/rec/1.png',
+                    alt: 'Client Photo'
+                })
 
             //Client Recommendation Only
             //incl. Client Name; Project & Recommendation Date; Recommendation Text    
             //section-recommendation = Black Block
             .section-recommendation__clrecmain
 
-                h1.section-recommendation__clrecname SOLODKUI Artur
+                h1.section-recommendation__recommendationclient SOLODKUI Artur
                 br          
-                a(href='https://beetroot.academy/' data-tooltip='Click to go to the project').section-recommendation__clrecprdt.simptip-position-right.simptip-success
+                a(href='https://beetroot.academy/' data-tooltip='Click to go to the project').section-recommendation__recommendationdata.simptip-position-right.simptip-success
                     span WEB Site: https://solodkui.academy/
 
-                p.section-recommendation__clrecprdt Period: 2021
+                p.section-recommendation__recommendationdata Period: 2021
                 br
-                p.section-recommendation__clrectext
+                p.section-recommendation__recommendationtext
                     | Hey guys! Last year I decided to open my own IT Academy.
                     br
                     br
