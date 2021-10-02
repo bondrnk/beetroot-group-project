@@ -15,7 +15,7 @@ $f-sen-regular: "Sen-Regular", sans-serif;
 // Font size
 $fs-soc-icon: 30;
 $fs-base: 16;
-$fs-lowRes:13;
+$fs-lowRes: 13;
 $fs-sub: 18;
 $fs-h2: 45;
 $fs-h1: 62;
@@ -28,7 +28,5 @@ $lh-big: 1.5;
 $t-normal: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 
 // Box Shadow
-// TODO change color
-$bs-button: 0px 5px 5px 0px rgba($c-white, 0.1);
-// TODO change color
-$bs-container: 0px 4px 4px 0px rgba($c-white, 0.4);
+$bs-button: 0px 5px 5px 0px rgba($c-darker-grey, 0.1);
+$bs-container: 0px 4px 4px 0px rgba($c-darker-grey, 0.4);

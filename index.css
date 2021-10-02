@@ -593,20 +593,19 @@ svg {
 .e-photocard {
   flex-direction: column;
   align-items: center;
-  margin: 10px;
+  margin: 30px 5px;
   display: flex;
   flex: 0 0 30%; }
   .e-photocard__name {
-    font-family: "Sen-Bold", sans-serif;
-    font-style: italic;
+    font-family: "Sen-Regular", sans-serif;
     font-size: 1.125em;
-    margin-top: 10px;
+    margin-top: 12px;
     text-align: center; }
     @media (max-width: 767px) {
       .e-photocard__name {
         max-width: 100px; } }
   .e-photocard__photo {
-    max-width: 210px; }
+    max-width: 180px; }
 
 .c-header {
   position: fixed;
@@ -820,7 +819,7 @@ svg {
 
 .c-section-about-us {
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 50px;
   color: #000;
   display: flex;
   width: 100%; }
@@ -883,27 +882,27 @@ svg {
   line-height: 26px; }
 
 .section-establishment {
-  padding: 165px 0; }
+  padding: 50px 0; }
   .section-establishment__wrapper {
     font-family: "Sen-Regular";
     max-width: 1300px;
     display: flex; }
   .section-establishment__media {
-    border: 1px solid black;
-    background-color: white;
+    box-shadow: 1px 1px 25px 0px rgba(38, 38, 38, 0.3);
+    background-color: #fff;
     border-radius: 5px;
-    margin: 50px 0;
-    color: black;
+    margin: 100px 0;
+    color: #262626;
     padding: 15px;
     z-index: 2; }
     .section-establishment__media-text {
       padding: 20px 0 10px; }
   .section-establishment__meet {
     padding: 85px 50px 85px 225px;
-    background-color: black;
+    background-color: #262626;
     margin-left: -175px;
     border-radius: 5px;
-    color: white;
+    color: #fff;
     z-index: 1; }
     .section-establishment__meet-title {
       font-family: "Sen-Bold";
