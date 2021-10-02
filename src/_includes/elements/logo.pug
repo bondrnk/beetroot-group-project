@@ -1,12 +1,7 @@
 mixin logo(args)
-  - let logoLink = args.link || 'icon-logo';
-  - let logoClass = args.class || 'icon';
-  - let svgName = args.name || 'default';
-  - let logoText = args.text || 'default'
 
-    a(href=logoLink class=logoClass)
-      svg(class="icon-" + svgName)
-        use(xlink:href="#icon-" + svgName)
-
-    a(href=logoLink class=logoText)
-      span BEETROOTERS 
+  a(href='./index.html').e-logo
+    .e-logo__wrapper
+      svg(class="icon icon-logo").e-logo__svg
+        use(xlink:href="#icon-logo")
+      span.e-logo__text BEETROOTERS 

@@ -1,0 +1,26 @@
+.c-service-card {
+  &__wrapper {
+    width: 100%;
+    font-size: em($fs-h2);
+    font-family: "Sen-Bold";
+  }
+  &__number {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+  }
+  &__title {
+    text-align: center;
+  }
+  &__icon {
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    position: absolute;
+    right: -50px;
+    bottom: -100px;
+  }
+}
+#icon-rectangle {
+  fill: none;
+}

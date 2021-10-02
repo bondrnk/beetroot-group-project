@@ -4,18 +4,11 @@ mixin header()
     .c-header__wrapper.wrapper
 
       //- Logo
-      .c-header__logo
-        .c-header__logo__wrapper                                
-          +logo({
-            link: './index.html',
-            class: 'e-logo e-logo--white',
-            name: 'logo',
-            text: 'e-logo__text'
-          })
+      .c-header__logo                         
+          +logo()
 
       //- Navigation list
-      +navigation()
-
-      //- Burger menu
-      .c-header__burger-menu
-        +burger-menu()
+      .c-header__navigation 
+        .c-header__navigation__wrapper
+          +navigation()
+          +burger-menu()

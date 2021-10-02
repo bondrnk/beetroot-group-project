@@ -1,0 +1,11 @@
+mixin service-card(args)
+  - let number = args.number || '00';
+  - let text = args.text || 'Default text';
+  - let svg = args.svg || 'circle';
+
+  .c-service-card 
+    .c-service-card__wrapper 
+      span.c-service-card__number=number  
+      h2.c-service-card__title=text 
+      .c-service-card__icon
+        +icon({link:'icon-'+svg})

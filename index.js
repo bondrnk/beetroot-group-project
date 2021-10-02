@@ -3,12 +3,12 @@
 setTimeout(() => {
   document.getElementById("page").style.display = "block";
   document.getElementById("loading").style.display = "none";
-}, 3000)
+}, 6000)
 
 // Burger menu
 
 const burgerMenu = document.querySelector(".e-burger-menu");
-const navMenu = document.querySelector(".c-navigation__wrapper");
+const navMenu = document.querySelector(".c-navigation__list");
 const navLink = document.querySelectorAll(".e-link");
 
 function mobileMenu() {
