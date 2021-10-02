@@ -2,13 +2,23 @@
 
     padding: 165px 0;
     flex-direction: column;
+    //mobile adaptability
+    @include media ('<desktop'){
+        padding: 0;
+    }
 
     //section-recommendation = WRAPPER
     &__wrapper {
         font-family: "sen-regular";
         display: flex;
     }
-    
+    //mobile adaptability
+    @include media('<desktop') {
+        padding: 0;
+        flex-direction: column;
+        
+    }
+
     //section-recommendation = WHITE BLOCK
     //use for client photo only
     &__clrecphoto {
@@ -17,6 +27,17 @@
         display: flex;
         width: 30%;
         border-radius: 10px;
+        //mobile adaptability
+        @include media ('<desktop') {
+            position: absolute;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 10px 0;
+            display: flex;
+            margin: 50px 0;
+        }
     }
 
     //section-recommendation = BLACK BLOCK
@@ -24,11 +45,18 @@
     &__clrecmain {
         padding: 85px 50px 85px 225px;
         margin-left: -115px;
-        z-index: 1;
-        width: 80%;
+        // z-index: 1;
+        max-width: 800px;
+        width: 100%;
         border-radius: 10px;
         background-color: $c-black;
         color: $c-white;
+        //mobile adaptability
+        @include media ('<desktop') {
+            margin-left: 0;
+            padding: 200px 31px;
+            padding-bottom: 63px;
+         }
     }
 
     //section-recommendation = Client Name
