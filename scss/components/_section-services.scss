@@ -1,18 +1,14 @@
 .c-section-services {
-  font-family: "Sen-Regular";
+  font-family: $f-sen-regular;
   justify-content: center;
-  padding-bottom: 65px;
   align-items: center;
-  max-width: 1200px;
-  padding-top: 65px;
   color: $c-black;
-  margin: 0 auto;
   display: flex;
   width: 100%;
   &__wrapper {
+    margin: 65px 0;
     flex-direction: column;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding: 0 15px;
     display: flex;
     width: 100%;
   }
@@ -20,7 +16,7 @@
     justify-content: space-between;
     display: flex;
     margin-bottom: 50px;
-    padding: 0 10px 0 10px;
+    padding: 0 10px;
     @include media("<desktop") {
       flex-direction: column;
       max-width: 700px;
@@ -28,8 +24,8 @@
     }
     &__title {
       margin-right: 50px;
-      line-height: 1.2;
-      max-width: 500px;
+      line-height: $lh-base;
+      max-width: 600px;
       @include media("<desktop") {
         margin-right: 0;
         max-width: 700px;
@@ -38,7 +34,7 @@
     }
     h2 {
       font-family: "Sen-Bold";
-      font-size: 40px;
+      font-size: em($fs-h2);
     }
     &__subtitle {
       max-width: 450px;
@@ -61,7 +57,7 @@
     }
     &__item {
       width: 100%;
-      padding: 0 10px 0 10px;
+      padding: 0 10px;
       max-width: 320px;
       @include media("<desktop") {
         width: 100%;
@@ -69,18 +65,6 @@
         max-width: 700px;
       }
     }
-    &__service-card {
-      background-color: $c-black;
-      justify-content: center;
-      align-items: center;
-      border-radius: 10px;
-      margin-bottom: 50px;
-      position: relative;
-      min-height: 350px;
-      overflow: hidden;
-      color: $c-white;
-      display: flex;
-      width: 100%;
-    }
+    
   }
 }

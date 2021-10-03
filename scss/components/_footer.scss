@@ -4,6 +4,8 @@
 
   &__wrapper {
     @include containerGlobal;
+    display: flex;
+    flex-direction: column;
   }
   &__logo{
     width: 200px;
