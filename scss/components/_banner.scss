@@ -27,7 +27,7 @@
           font-size: $fs-h2 + px;
 
           @include media ('<phone'){
-            font-size: $fs-h1-m + px;
+            font-size: $fs-h2-m + px;
             max-width: 100%;
           }
         }
@@ -41,23 +41,22 @@
 
   &__info {
     max-width: 420px;
-    width: 100%;
   }
 
   &__title {
-    font-family: "sen-bold";
+    font-family: $f-sen-bold;
     font-size: $fs-h1 + px;
     line-height: $lh-base;
     margin: 0 0 20px;
 
     @include media ('<phone'){
-      font-size: $fs-h1-m + px;
+      font-size: $fs-h2-m + px;
       max-width: 160px;
     }
   }
 
   &__sub-title {
-    font-family: "sen-regular";
+    font-family: $f-sen-regular;
     font-size: $fs-sub + px;
     line-height: $lh-big;
     margin-bottom: 30px;
