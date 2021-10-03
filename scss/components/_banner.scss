@@ -11,8 +11,8 @@
     margin: 130px auto 0 auto;
 
     @include media ('<phone'){
-      padding: 0 20px;
       margin: 230px auto 50px auto;
+      padding: 0 20px;
     }
 
     &--width-mode {
