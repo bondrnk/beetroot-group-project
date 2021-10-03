@@ -764,7 +764,7 @@ svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 10px;
+  margin: 30px 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -774,10 +774,9 @@ svg {
 }
 
 .e-photocard__name {
-  font-family: "Sen-Bold", sans-serif;
-  font-style: italic;
+  font-family: "Sen-Regular", sans-serif;
   font-size: 1.125em;
-  margin-top: 10px;
+  margin-top: 12px;
   text-align: center;
 }
 
@@ -1158,7 +1157,7 @@ svg {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 100px;
+  margin-top: 50px;
   color: #000;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1257,7 +1256,7 @@ svg {
 }
 
 .section-establishment {
-  padding: 165px 0;
+  padding: 50px 0;
 }
 
 .section-establishment__wrapper {
@@ -1269,11 +1268,12 @@ svg {
 }
 
 .section-establishment__media {
-  border: 1px solid black;
-  background-color: white;
+  -webkit-box-shadow: 1px 1px 25px 0px rgba(38, 38, 38, 0.3);
+          box-shadow: 1px 1px 25px 0px rgba(38, 38, 38, 0.3);
+  background-color: #fff;
   border-radius: 5px;
-  margin: 50px 0;
-  color: black;
+  margin: 100px 0;
+  color: #262626;
   padding: 15px;
   z-index: 2;
 }
@@ -1284,10 +1284,10 @@ svg {
 
 .section-establishment__meet {
   padding: 85px 50px 85px 225px;
-  background-color: black;
+  background-color: #262626;
   margin-left: -175px;
   border-radius: 5px;
-  color: white;
+  color: #fff;
   z-index: 1;
 }
 
@@ -1328,21 +1328,23 @@ svg {
 
 .c-service-card__number {
   position: absolute;
-  left: 15px;
-  top: 15px;
+  font-size: 0.875em;
+  left: 30px;
+  top: 30px;
 }
 
 .c-service-card__title {
+  font-size: 0.875em;
   text-align: center;
 }
 
 .c-service-card__icon {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   padding: 5px;
   position: absolute;
-  right: -50px;
-  bottom: -100px;
+  right: -40px;
+  bottom: -60px;
 }
 
 #icon-rectangle {
@@ -1367,6 +1369,20 @@ svg {
   display: block;
 }
 
+@media (max-width: 767px) {
+  .loading {
+    font-size: 60pt;
+    height: 90px;
+  }
+}
+
+@media (max-width: 479px) {
+  .loading {
+    font-size: 40pt;
+    height: 80px;
+  }
+}
+
 .loading-2 {
   top: 300px;
   width: 473px;
@@ -1385,7 +1401,7 @@ svg {
 }
 
 .loading-2-text {
-  background-image: url("../../assets/images/red.jpeg");
+  background-image: url("./assets/images/red.jpeg");
   width: 473px;
   height: 97px;
   display: inline-block;
@@ -1428,16 +1444,30 @@ svg {
 }
 
 .wave {
-  background-image: url("../../assets/images/red.jpeg");
+  background-image: url("./assets/images/red.jpeg");
   -webkit-background-clip: text;
   background-clip: text;
   color: rgba(0, 0, 0, 0);
   text-shadow: 0px 0px rgba(255, 255, 255, 0.06);
-  -webkit-animation: wave-animation 2s infinite linear, loading-animation 10s infinite linear alternate;
-          animation: wave-animation 2s infinite linear, loading-animation 10s infinite linear alternate;
+  -webkit-animation: wave-animation 2s infinite linear, loading-animation 5s infinite linear alternate;
+          animation: wave-animation 2s infinite linear, loading-animation 5s infinite linear alternate;
   background-size: 200px 100px;
   background-repeat: repeat-x;
   opacity: 1;
+}
+
+@media (max-width: 767px) {
+  .wave {
+    -webkit-animation: wave-animation 2s infinite linear, loading-animation 7.5s infinite linear alternate;
+            animation: wave-animation 2s infinite linear, loading-animation 7.5s infinite linear alternate;
+  }
+}
+
+@media (max-width: 479px) {
+  .wave {
+    -webkit-animation: wave-animation 2s infinite linear, loading-animation 10s infinite linear alternate;
+            animation: wave-animation 2s infinite linear, loading-animation 10s infinite linear alternate;
+  }
 }
 
 .wave-2 {

@@ -1,20 +1,19 @@
-.e-photocard{
+.e-photocard {
   flex-direction: column;
   align-items: center;
-  margin: 10px;
+  margin: 30px 5px;
   display: flex;
   flex: 0 0 30%;
 
-  &__name{
-  font-family: $f-sen-bold;
-  font-style: italic;
-  font-size: em($fs-sub);
-  margin-top: 10px;
-  text-align: center;
+  &__name {
+    font-family: $f-sen-regular;
+    font-size: em($fs-sub);
+    margin-top: 12px;
+    text-align: center;
 
-  @include media ('<tablet'){
-    max-width: 100px;
-  }
+    @include media("<tablet") {
+      max-width: 100px;
+    }
   }
 
   &__photo{
