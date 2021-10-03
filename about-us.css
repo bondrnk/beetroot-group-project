@@ -768,9 +768,20 @@ svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 30%;
           flex: 0 0 30%;
+}
+
+.e-photocard:hover > .e-photocard__photo {
+  -webkit-transform: perspective(300px) rotateY(-180deg);
+          transform: perspective(300px) rotateY(-180deg);
+}
+
+.e-photocard:hover > .e-photocard__rear-photo {
+  -webkit-transform: perspective(300px) rotateY(0deg);
+          transform: perspective(300px) rotateY(0deg);
 }
 
 .e-photocard__name {
@@ -788,6 +799,34 @@ svg {
 
 .e-photocard__photo {
   width: 300px;
+  height: 300px;
+  overflow: hidden;
+  max-width: 300px;
+  border-radius: 50%;
+  -webkit-transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: perspective(300px) rotateY(0deg);
+          transform: perspective(300px) rotateY(0deg);
+}
+
+.e-photocard__rear-photo {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  border-radius: 50%;
+  -webkit-transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: perspective(300px) rotateY(-180deg);
+          transform: perspective(300px) rotateY(-180deg);
+  background-image: url(../../assets/photos/Beetroot-Logo.png);
 }
 
 .c-header {
