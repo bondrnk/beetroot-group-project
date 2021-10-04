@@ -1,6 +1,6 @@
 :root{
 --typewriterSpeed: 6s;
---typewriterCharacters: 22;
+--typewriterCharacters: 15;
 --bg-color: white;
 }
 
@@ -13,7 +13,7 @@
   border-radius: 10px;
   margin-bottom: 50px;
   position: relative;
-  min-height: 350px;
+  min-height: 300px;
   overflow: hidden;
   color: $c-white;
   cursor: pointer;

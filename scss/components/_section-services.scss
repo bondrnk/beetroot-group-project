@@ -10,13 +10,18 @@
     flex-direction: column;
     padding: 0 15px;
     display: flex;
-    width: 100%;
+    width: fit-content;
+
+    @include media("<desktop") {
+     text-align: center;
+    }
   }
   &__info {
     justify-content: space-between;
     display: flex;
     margin-bottom: 50px;
     padding: 0 10px;
+
     @include media("<desktop") {
       flex-direction: column;
       max-width: 700px;
@@ -40,6 +45,7 @@
 
     &__subtitle {
       max-width: 450px;
+
       @include media("<desktop") {
         max-width: 700px;
       }
@@ -52,6 +58,7 @@
       justify-content: space-between;
       display: flex;
       width: 100%;
+
       @include media("<desktop") {
         flex-direction: column;
         align-items: center;
@@ -61,6 +68,7 @@
       width: 100%;
       padding: 0 10px;
       max-width: 320px;
+
       @include media("<desktop") {
         width: 100%;
         margin-bottom: 40px;
@@ -70,10 +78,18 @@
   }
 }
 .type-animation{
+  width: max-content;
   // font-size: clamp(1rem, 3vw + 1rem, 4rem);
   font-family: $f-Source-Pro;
   position: relative;
-  width: max-content;
+
+  @include media("<desktop") {
+    left: 35%;
+  }
+
+  @include media("<phone") {
+    left: 25%;
+  }
  }
 
 .type-animation::before,

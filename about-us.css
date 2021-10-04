@@ -1106,7 +1106,15 @@ svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+@media (max-width: 1023px) {
+  .c-section-services__wrapper {
+    text-align: center;
+  }
 }
 
 .c-section-services__info {
@@ -1200,11 +1208,23 @@ svg {
 }
 
 .type-animation {
-  font-family: "Source-San-Pro_Bold", monospace;
-  position: relative;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  font-family: "Source-San-Pro_Bold", monospace;
+  position: relative;
+}
+
+@media (max-width: 1023px) {
+  .type-animation {
+    left: 35%;
+  }
+}
+
+@media (max-width: 479px) {
+  .type-animation {
+    left: 25%;
+  }
 }
 
 .type-animation::before,
@@ -1383,7 +1403,7 @@ svg {
 
 :root {
   --typewriterSpeed: 6s;
-  --typewriterCharacters: 22;
+  --typewriterCharacters: 15;
   --bg-color: white;
 }
 
@@ -1400,7 +1420,7 @@ svg {
   border-radius: 10px;
   margin-bottom: 50px;
   position: relative;
-  min-height: 350px;
+  min-height: 300px;
   overflow: hidden;
   color: #fff;
   cursor: pointer;
