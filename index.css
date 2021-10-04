@@ -827,7 +827,7 @@ svg {
           backface-visibility: hidden;
   -webkit-transform: perspective(300px) rotateY(-180deg);
           transform: perspective(300px) rotateY(-180deg);
-  background-image: url(../../assets/photos/Beetroot-Logo.png);
+  background-image: url(./assets/photos/Beetroot-Logo.png);
 }
 
 .c-header {
@@ -1360,6 +1360,7 @@ svg {
   min-height: 350px;
   overflow: hidden;
   color: #fff;
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
