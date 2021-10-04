@@ -1,14 +1,21 @@
 @font-face {
   font-family: "Sen-Bold";
-  src: url("./assets/fonts/sen/Sen-Bold.woff2") format("woff2"), url("./assets/fonts/sen/Sen-Bold.woff") format("woff");
+  src: url("./assets/fonts/Sen/Sen-Bold.woff2") format("woff2"), url("./assets/fonts/Sen/Sen-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Sen-Regular";
-  src: url("./assets/fonts/sen/Sen-Regular.woff2") format("woff2"), url("./assets/fonts/sen/Sen-Regular.woff") format("woff");
+  src: url("./assets/fonts/Sen/Sen-Regular.woff2") format("woff2"), url("./assets/fonts/Sen/Sen-Regular.woff") format("woff");
   font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Source-San-Pro_Bold";
+  src: url("./assets/fonts/Source-Pro/SourceSansPro-Bold.ttf") format("ttf");
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -1130,17 +1137,16 @@ svg {
   max-width: 600px;
 }
 
+.c-section-services__info__title > h2 {
+  font-size: 2.8125em;
+}
+
 @media (max-width: 1023px) {
   .c-section-services__info__title {
     margin-right: 0;
     max-width: 700px;
     margin-bottom: 20px;
   }
-}
-
-.c-section-services__info h2 {
-  font-family: "Sen-Bold";
-  font-size: 2.8125em;
 }
 
 .c-section-services__info__subtitle {
@@ -1191,6 +1197,37 @@ svg {
     margin-bottom: 40px;
     max-width: 700px;
   }
+}
+
+.type-animation {
+  font-family: "Source-San-Pro_Bold", monospace;
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.type-animation::before,
+.type-animation::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.type-animation::before {
+  background: var(--bg-color);
+  -webkit-animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards;
+          animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards;
+}
+
+.type-animation::after {
+  width: 0.125em;
+  background: black;
+  -webkit-animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards, blink 750ms steps(var(--typewriterCharacters)) infinite;
+          animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards, blink 750ms steps(var(--typewriterCharacters)) infinite;
 }
 
 .c-section-about-us {
@@ -1344,6 +1381,12 @@ svg {
   margin-top: 100px;
 }
 
+:root {
+  --typewriterSpeed: 6s;
+  --typewriterCharacters: 22;
+  --bg-color: white;
+}
+
 .c-service-card {
   background-color: #262626;
   font-family: "Sen-Bold", sans-serif;
@@ -1372,6 +1415,11 @@ svg {
   font-size: 0.875em;
   left: 30px;
   top: 30px;
+  opacity: 0;
+  -webkit-transform: translateY(3rem);
+          transform: translateY(3rem);
+  -webkit-animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
+          animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
 }
 
 .c-service-card__title {
@@ -1535,5 +1583,45 @@ svg {
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }

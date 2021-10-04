@@ -26,16 +26,18 @@
       margin-right: 50px;
       line-height: $lh-base;
       max-width: 600px;
+
+      >  h2 {
+        font-size: em($fs-h2);
+      }
+
       @include media("<desktop") {
         margin-right: 0;
         max-width: 700px;
         margin-bottom: 20px;
       }
     }
-    h2 {
-      font-family: "Sen-Bold";
-      font-size: em($fs-h2);
-    }
+
     &__subtitle {
       max-width: 450px;
       @include media("<desktop") {
@@ -66,4 +68,34 @@
       }
     }
   }
+}
+.type-animation{
+  // font-size: clamp(1rem, 3vw + 1rem, 4rem);
+  font-family: $f-Source-Pro;
+  position: relative;
+  width: max-content;
+ }
+
+.type-animation::before,
+.type-animation::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.type-animation::before {
+  background: var(--bg-color);
+  animation: typewriter var(--typewriterSpeed)
+    steps(var(--typewriterCharacters)) 1s forwards;
+}
+
+.type-animation::after {
+  width: 0.125em;
+  background: black;
+  animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharacters)) 1s forwards,
+    blink 750ms steps(var(--typewriterCharacters)) infinite;
 }

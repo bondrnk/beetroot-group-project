@@ -1,3 +1,9 @@
+:root{
+--typewriterSpeed: 6s;
+--typewriterCharacters: 22;
+--bg-color: white;
+}
+
 .c-service-card {
   background-color: $c-darker-grey;
   font-family: $f-sen-bold;
@@ -13,11 +19,15 @@
   cursor: pointer;
   display: flex;
   width: 100%;
+
   &__number {
     position: absolute;
     font-size: em(14);
     left: 30px;
     top: 30px;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
   }
   &__title {
     font-size: em(14);
