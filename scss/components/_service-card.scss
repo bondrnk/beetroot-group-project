@@ -1,14 +1,33 @@
+:root{
+--typewriterSpeed: 6s;
+--typewriterCharacters: 15;
+--bg-color: white;
+}
+
 .c-service-card {
-  &__wrapper {
-    width: 100%;
-    font-size: em($fs-h2);
-    font-family: "Sen-Bold";
-  }
+  background-color: $c-darker-grey;
+  font-family: $f-sen-bold;
+  justify-content: center;
+  font-size: em($fs-h2);
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  position: relative;
+  min-height: 300px;
+  overflow: hidden;
+  color: $c-white;
+  cursor: pointer;
+  display: flex;
+  width: 100%;
+
   &__number {
     position: absolute;
     font-size: em(14);
     left: 30px;
     top: 30px;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
   }
   &__title {
     font-size: em(14);

@@ -16,7 +16,7 @@
         }
 
         &__title {
-          font-size: $fs-h2 + px;
+          font-size: em($fs-h2);
         }
 
         &__sub-title {
