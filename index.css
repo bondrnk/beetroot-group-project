@@ -765,6 +765,7 @@ svg {
       -ms-flex-align: center;
           align-items: center;
   margin: 30px 5px;
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
