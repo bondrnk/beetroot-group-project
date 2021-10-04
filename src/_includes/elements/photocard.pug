@@ -1,0 +1,13 @@
+mixin photocard(args)
+  - let src = args.src || '';
+  - let alt = args.alt || 'default image';
+  - let photoCardName = args.photoCardName || 'default name';
+
+      .e-photocard
+        .e-photocard__photo
+          +image({
+            src,
+            alt
+          })
+        .e-photocard__rear-photo
+        .e-photocard__name=photoCardName

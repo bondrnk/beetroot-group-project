@@ -1,0 +1,40 @@
+.e-link {
+  // width: 100%;
+  // height: 100%;
+  transition: $t-normal;
+  display: inline-block;
+
+  &--lighter-text {
+    color: $c-white;
+    padding: 5px 12px;
+
+    &:hover {
+      border-radius: 5px;
+      background-color: $c-darker-grey;
+      color: $c-white;
+      transition: $t-normal;
+    }
+  }
+
+  &--banner-style {
+    background-color: transparent;
+    border: 1px solid $c-white;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: $c-white;
+      color: $c-black;
+    }
+
+    &-red {
+      background-color: $c-white;
+      color: $c-black;
+
+      &:hover {
+        background-color: $c-light-pink;
+        border-color: $c-light-pink;
+        color: $c-white;
+      }
+    }
+  }
+}

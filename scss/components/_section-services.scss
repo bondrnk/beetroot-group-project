@@ -1,0 +1,117 @@
+.c-section-services {
+  font-family: $f-sen-regular;
+  justify-content: center;
+  align-items: center;
+  color: $c-black;
+  display: flex;
+  width: 100%;
+  &__wrapper {
+    margin: 65px 0;
+    flex-direction: column;
+    padding: 0 15px;
+    display: flex;
+    width: fit-content;
+
+    @include media("<desktop") {
+     text-align: center;
+    }
+  }
+  &__info {
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 50px;
+    padding: 0 10px;
+
+    @include media("<desktop") {
+      flex-direction: column;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    &__title {
+      margin-right: 50px;
+      line-height: $lh-base;
+      max-width: 600px;
+
+      >  h2 {
+        font-size: em($fs-h2);
+      }
+
+      @include media("<desktop") {
+        margin-right: 0;
+        max-width: 700px;
+        margin-bottom: 20px;
+      }
+    }
+
+    &__subtitle {
+      max-width: 450px;
+
+      @include media("<desktop") {
+        max-width: 700px;
+      }
+    }
+  }
+  // content
+  .c-service-content {
+    width: 100%;
+    &__wrapper {
+      justify-content: space-between;
+      display: flex;
+      width: 100%;
+
+      @include media("<desktop") {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    &__item {
+      width: 100%;
+      padding: 0 10px;
+      max-width: 320px;
+
+      @include media("<desktop") {
+        width: 100%;
+        margin-bottom: 40px;
+        max-width: 700px;
+      }
+    }
+  }
+}
+.type-animation{
+  width: max-content;
+  // font-size: clamp(1rem, 3vw + 1rem, 4rem);
+  font-family: $f-Source-Pro;
+  position: relative;
+
+  @include media("<desktop") {
+    left: 35%;
+  }
+
+  @include media("<phone") {
+    left: 25%;
+  }
+ }
+
+.type-animation::before,
+.type-animation::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.type-animation::before {
+  background: var(--bg-color);
+  animation: typewriter var(--typewriterSpeed)
+    steps(var(--typewriterCharacters)) 1s forwards;
+}
+
+.type-animation::after {
+  width: 0.125em;
+  background: black;
+  animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharacters)) 1s forwards,
+    blink 750ms steps(var(--typewriterCharacters)) infinite;
+}

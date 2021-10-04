@@ -1,0 +1,25 @@
+mixin navigation()
+
+  nav.c-navigation 
+      ul.c-navigation__list
+        li.c-navigation__item
+          +link({
+            href: './index.html',
+            button: false,
+            text: 'Home',
+            lightText: true
+          })
+        li.c-navigation__item 
+          +link({
+            href: './about-us.html',
+            button: false,
+            text: 'About us',
+            lightText: true
+          })
+        li.c-navigation__item 
+          +link({
+            href: './contact.html',
+            button: false,
+            text: 'Contact',
+            lightText: true
+          })

@@ -1,0 +1,48 @@
+.c-navigation {
+
+  &__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__item {
+    min-width: 70px;
+    text-align: center;
+    font-size: em(15);
+    padding-left: 50px;
+  }
+
+  @include media("<tablet") {
+    &__list {
+      width: 100%;
+      height: 100%;
+
+      padding: 10px;
+
+      flex-direction: column;
+      justify-content: flex-start;
+
+      position: fixed;
+      z-index: 1000;
+      right: -100%;
+      top: 75px;
+
+      background-color: $c-light-red;
+      text-align: center;
+
+      // box-shadow: 0 10px 27px rgba($c-black, 0.05);
+      transition: $t-normal;
+
+      &.active {
+        right: 0;
+      }
+    }
+
+    &__item {
+      font-size: em(16);
+      padding-left: 0;
+      margin-bottom: 15px;
+    }
+  }
+}

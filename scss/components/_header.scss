@@ -1,0 +1,40 @@
+.c-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 75px;
+  background-color: $c-light-red;
+  z-index: 800;
+
+  &__wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // TODO move to global wrapper(its already there O_O)
+    margin: 0 auto;
+  }
+
+  &__logo {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__navigation{
+    width: fit-content;
+    height: 50px;
+
+    &__wrapper{
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+    }
+  }
+}

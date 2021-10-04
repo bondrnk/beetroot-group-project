@@ -1,0 +1,41 @@
+.section-establishment {
+  padding: 50px 0;
+
+  &__wrapper {
+    font-family: "Sen-Regular";
+    max-width: 1300px;
+    display: flex;
+  }
+
+  &__media {
+    box-shadow: 1px 1px 25px 0px rgba($c-darker-grey, 0.3);
+    background-color: $c-white;
+    border-radius: 5px;
+    margin: 100px 0;
+    color: $c-darker-grey;
+    padding: 15px;
+    z-index: 2;
+
+    &-text {
+      padding: 20px 0 10px;
+    }
+  }
+
+  &__meet {
+    padding: 85px 50px 85px 225px;
+    background-color: $c-darker-grey;
+    margin-left: -175px;
+    border-radius: 5px;
+    color: $c-white;
+    z-index: 1;
+
+    &-title {
+      font-family: "Sen-Bold";
+      font-size: 32px;
+    }
+
+    &-text {
+      padding-bottom: 10px;
+    }
+  }
+}

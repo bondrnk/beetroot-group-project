@@ -1,0 +1,34 @@
+// Colors
+$c-darker-grey: #262626;
+$c-light-pink: #f2505d;
+$c-light-grey: #404040;
+$c-light-red: #f25252;
+$c-shadowy: #222222;
+$c-red: #f20707;
+$c-white: #fff;
+$c-black: #000;
+
+// Fonts
+$f-sen-bold: "Sen-Bold", sans-serif;
+$f-sen-regular: "Sen-Regular", sans-serif;
+$f-Source-Pro: "Source-San-Pro_Bold", monospace;
+
+// Font size
+$fs-1-5em: 24;
+$fs-soc-icon: 30;
+$fs-base: 16;
+$fs-lowRes: 13;
+$fs-sub: 18;
+$fs-h2: 45;
+$fs-h1: 62;
+
+// Line height
+$lh-base: 1.3;
+$lh-big: 1.5;
+
+// Transition
+$t-normal: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+
+// Box Shadow
+$bs-button: 0px 5px 5px 0px rgba($c-darker-grey, 0.1);
+$bs-container: 0px 4px 4px 0px rgba($c-darker-grey, 0.4);

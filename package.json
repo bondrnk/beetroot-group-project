@@ -1,0 +1,30 @@
+{
+  "name": "group-project",
+  "version": "1.0.0",
+  "description": "Beetroot academy group project",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bondrnk/group-project"
+  },
+  "scripts": {
+    "scss": "node-sass --watch scss -o ."
+  },
+  "keywords": [
+    "beetroot-academy",
+    "group-project"
+  ],
+  "author": "hanna bondarenko hanna.bondarenko.s@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bondrnk/group-project"
+  },
+  "homepage": "https://github.com/bondrnk/group-project#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.1",
+    "compass-mixins": "^0.12.10",
+    "font-awesome": "^4.7.0",
+    "node-sass": "^6.0.1",
+    "simptip": "^1.0.4"
+  }
+}
