@@ -1,10 +1,10 @@
 mixin banner(args={})
-  - let infoHeader = args.infoHeader;
+  - let infoHeader = args.infoHeader || default text;
   - let rightMode = args.rightMode || false;
   - let widthMode = args.widthMode || false;
   - let colorMode = args.colorMode || false;
-  - let infoText = args.infoText;
-  - let linkText = args.linkText;
+  - let infoText = args.infoText || default text;
+  - let linkText = args.linkText || default text;
   - let style = args.style;
   - let src = args.src ;
 
