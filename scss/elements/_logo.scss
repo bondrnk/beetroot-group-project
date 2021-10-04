@@ -11,12 +11,12 @@
     align-items: center;
   }
 
-  &__text{
+  &__text {
     font-family: $f-sen-bold;
     font-size: em(12);
     letter-spacing: 4px;
   }
-  
+
   &__svg {
     min-width: 75px;
     width: 100%;
