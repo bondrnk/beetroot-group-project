@@ -1085,7 +1085,7 @@ svg {
   display: inline-block; }
 
 .c-banner-contact {
-  background-image: linear-gradient(360deg, #222222, rgba(34, 34, 34, 0)), url("../../assets/images/banner-contact.jpeg");
+  background-image: linear-gradient(360deg, #222222, rgba(34, 34, 34, 0)), url("./assets/images/banner-contact.jpeg");
   background-size: cover;
   background-position: center center;
   font-family: "Sen-Bold";
