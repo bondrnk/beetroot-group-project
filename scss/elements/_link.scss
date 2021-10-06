@@ -37,4 +37,16 @@
       }
     }
   }
+
+  &--button-red {
+    color: $c-white;
+    background-color: $c-light-red;
+    border-radius: 5px;
+    padding: 5px 25px;
+    font-size: em(14);
+
+    &:hover {
+      background-color: $c-darker-grey;
+    }
+  }
 }

@@ -1,0 +1,35 @@
+mixin banner-contact()
+  .c-banner-contact.d-flex.align-items-center
+    .c-banner-contact__wrapper.wrapper.d-flex.flex-column.justify-content-center
+
+      //- Title
+      h4.c-banner-contact__title= 'Contact Beetrooters'
+
+      //- Tiles for contact
+      .c-banner-contact__tiles.d-flex
+
+        //- Contact us block
+        .c-banner-contact__item.d-flex.flex-column.align-items-center
+          .c-banner-contact__item__icon
+            +icon({link:'icon-chat'})
+          h5.c-banner-contact__item__title= 'Contact Us'
+          p.c-banner-contact__item__text= 'Just want to say hi? We`d love to hear from you. We love our customers and community!'
+          .c-banner-contact__item__button
+            +link({
+              button: true,
+              buttonColor: 'red',
+              text: 'Send Us A Message'
+            })
+
+        //- Get support block
+        .c-banner-contact__item.d-flex.flex-column.justify-content-between.align-items-center
+          .c-banner-contact__item__icon
+            +icon({link:'icon-chat'})
+          h5.c-banner-contact__item__title= 'Get support'
+          p.c-banner-contact__item__text= 'Have an issue with an order or with a product you purchased from us? Fill out our support form.'
+          .c-banner-contact__item__button
+            +link({
+              button: true,
+              buttonColor: 'red',
+              text: 'Contact support'
+            })
