@@ -1,0 +1,44 @@
+.c-section-form {
+  color: $c-darker-grey;
+  font-family: $f-sen-regular;
+  margin: 80px;
+
+  @include media("<tablet") {
+    margin: 30px;
+  }
+
+  &__wrapper {
+    @include media("<desktop") {
+      flex-direction: column;
+    }
+  }
+
+  &__contact-info {
+    font-size: em(14);
+  }
+
+  &__title {
+    font-size: em(32);
+    font-family: $f-sen-bold;
+    margin-bottom: 10px;
+    white-space: nowrap;
+
+    @include media("<phone") {
+      font-size: em(26);
+    }
+  }
+
+  &__text {
+    margin-bottom: 40px;
+  }
+
+  &__form {
+    width: 100%;
+    margin-left: 150px;
+
+    @include media("<desktop") {
+      margin-top: 50px;
+      margin-left: 0;
+    }
+  }
+}

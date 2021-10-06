@@ -1,0 +1,70 @@
+.c-form-contact {
+  font-family: $f-sen-regular;
+  color: $c-darker-grey;
+  width: 100%;
+
+  &__wrapper {
+  }
+
+  &__title {
+    font-family: $f-sen-bold;
+    margin-bottom: 10px;
+    font-size: em(28);
+
+    @include media("<phone") {
+      font-size: em(22);
+    }
+  }
+
+  &__text {
+    margin-bottom: 10px;
+    font-size: em(14);
+  }
+
+  &__item {
+    margin-bottom: 10px;
+  }
+
+  &__label {
+    margin-bottom: 5px;
+    font-size: em(14);
+    width: 100%;
+  }
+
+  &__input {
+    border: 1px solid $c-darker-grey;
+    padding: 8px 12px;
+    border-radius: 3px;
+    font-size: em(12);
+    width: 100%;
+    outline: none;
+    transition: $t-normal;
+    color: $c-darker-grey;
+    min-height: 30px;
+
+    & placeholder {
+    }
+
+    &:focus,
+    &:hover {
+      transition: $t-normal;
+      border-color: $c-light-red;
+    }
+  }
+
+  &__button {
+    max-width: fit-content;
+    color: $c-white;
+    font-family: $f-sen-bold;
+    background-color: $c-light-red;
+    border-radius: 5px;
+    padding: 5px 25px;
+    font-size: em(14);
+    border: none;
+    transition: $t-normal;
+
+    &:hover {
+      background-color: $c-darker-grey;
+    }
+  }
+}
