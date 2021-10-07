@@ -15,29 +15,26 @@ mixin section-services()
         .c-service-content__wrapper
           //- first
           .c-service-content__item
-            .c-service-content__service-card
-              +service-card({
-                number:'01',
-                text:'SHOP PRODUCTS',
-                svg:'circle'
-                })
-            p.c-service-content__description Our full product line is still available online here on our site! Getting outside and hiking is still something you can do. Get your gear now!
-          //- second
+            +service-card({
+              number:'01',
+              text:'SHOP PRODUCTS',
+              svg:'circle',
+              descriptionText:'Our full product line is still available online here on our site! Getting outside and hiking is still something you can do. Get your gear now!'
+            })
+            //- second
           .c-service-content__item
-            .c-service-content__service-card
-              +service-card({
-                number:'02',
-                text:'DONATE',
-                svg:'rectangle'
-                })   
-            p.c-service-content__description Since we've changed the way we operate to online only, and to ensure your safety, not all our staff is working. Donate to keep them afloat.
-          //- three
+            +service-card({
+              number:'02',
+              text:'DONATE',
+              svg:'rectangle',
+              descriptionText:'Since we\'ve changed the way we operate to online only, and to ensure your safety, not all our staff is working. Donate to keep them afloat.'
+            })   
+            //- three
           .c-service-content__item
-            .c-service-content__service-card
-              +service-card({
-                number:'03',
-                text:'BUY GIFT CARDS',
-                svg:'triangle'
+            +service-card({
+              number:'03',
+              text:'BUY GIFT CARDS',
+              svg:'triangle',
+              descriptionText:'Have all the outdoor gear you need for now? Buy a gift card and use it later or share it with friends and family.'
               })
-            p.c-service-content__description Have all the outdoor gear you need for now? Buy a gift card and use it later or share it with friends and family.
 

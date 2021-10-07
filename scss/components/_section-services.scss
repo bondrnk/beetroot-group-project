@@ -64,17 +64,6 @@
         align-items: center;
       }
     }
-    &__item {
-      width: 100%;
-      padding: 0 10px;
-      max-width: 320px;
-
-      @include media("<desktop") {
-        width: 100%;
-        margin-bottom: 40px;
-        max-width: 700px;
-      }
-    }
   }
 }
 .type-animation{
