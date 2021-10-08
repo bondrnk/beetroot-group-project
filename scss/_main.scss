@@ -64,20 +64,20 @@ body {
   margin: 0 auto;
   width: 100%;
 
-  @include media ('<phone'){
+  @include media("<phone") {
     padding: 0 20px;
   }
 }
 
 a {
   text-decoration: none;
-  &:hover{
+  &:hover {
     color: $c-white;
   }
 }
 
 ul {
-  list-style: none;
+  list-style-type: none;
   padding: 0;
   margin: 0;
 }
@@ -88,7 +88,7 @@ svg {
   height: 100%;
 }
 
-.l-common{
+.l-common {
   padding-top: 75px;
 }
 

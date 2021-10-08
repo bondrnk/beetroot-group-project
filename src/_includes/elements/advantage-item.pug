@@ -1,0 +1,13 @@
+mixin advantageItem(args={})
+  - let svg = args.svg || 'check-mark';
+  - let svgMode = args.svgMode || 'black';
+  - let title = args.title || 'Default title';
+  - let text = args.text || 'Default text';
+
+  .e-advantage-item
+    .e-advantage-item__wrapper 
+      .e-advantage-item__icon 
+        svg.icon.e-advantage-item__svg(class=`e-advantage-item__svg--${svgMode}`)
+          use(xlink:href=`#icon-${svg}`)
+      h4.e-advantage-item__title= title
+      p.e-advantage-item__text= text
