@@ -1,0 +1,34 @@
+mixin section-recommendation()
+  section.section-recommendation
+    .section-recommendation__wrapper.wrapper.d-flex
+                            
+      //-Client Photo Only
+      //-section-recommendation = White Block
+      .section-recommendation__photo.border-dark.border
+        +image({
+          src: '../../assets/photos/Arthur.png',
+          alt: 'Arthur Photo'
+        })
+
+      //-Client Recommendation Only
+      //-incl. Client Name; Project & Recommendation Date; Recommendation Text    
+      //-section-recommendation = Black Block
+      .section-recommendation__info.bg-dark
+        h3.section-recommendation__client SOLODKUI Artur
+        br          
+        a(href='https://beetroot.academy/' data-tooltip='Click to go to the project').section-recommendation__data.simptip-position-right.simptip-success
+          span WEB Site: https://solodkui.academy/
+
+        p.section-recommendation__data Period: 2021
+        br
+        p.section-recommendation__text
+          | Hey guys! Last year I decided to open my own IT Academy.
+          br
+          br
+          | I needed a website that would have a minimalist design, and at same time stood out from competitors' websites.
+          br
+          br
+          | I contacted the BEETROOTERS Team to solve my case.
+          br
+          br
+          | The BEETROOTERS Team has developed the coolest site, as for me. Minimalistic design, well-chosen colors and excellent drawings.

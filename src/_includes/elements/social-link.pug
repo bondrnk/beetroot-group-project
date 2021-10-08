@@ -1,7 +1,7 @@
 mixin social-link(args)
-  - let hrefLink = args.href
-  - let iconLink = args.icon
-  - let targetLink = args.target || "_self"
+  - let hrefLink = args.href || '#';
+  - let iconLink = args.icon || 'logo';
+  - let targetLink = args.target || "_self";
 
   a(href=hrefLink target=targetLink).e-social-link.d-inline-block.text-center.align-items-center
     i.fab.e-social-link__link(class=iconLink)

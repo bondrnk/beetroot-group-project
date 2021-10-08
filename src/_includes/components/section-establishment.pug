@@ -1,16 +1,16 @@
 mixin section-establishment()
   section.section-establishment
-    .section-establishment__wrapper.wrapper
-      .section-establishment__media
-        p.section-establishment__media-text 
+    .section-establishment__wrapper.wrapper.d-flex
+      .section-establishment__media.bg-white.text-dark.border.border-dark
+        p.section-establishment__media-text Start with beetroot
         iframe(width="500" height="280" src="https://www.youtube.com/embed/m0L7Dp_hkyE" title="YouTube video player" frameborder="0" allow="accelerometer clipboard-write encrypted-media gyroscope picture-in-picture" allowfullscreen)
-        p.section-establishment__media-text 
+        p.section-establishment__media-text Intro
         video(width="500" height="280" controls)
           source(type="video/mp4" src="./assets/media/video-2.mp4")
-        p.section-establishment__media-text 
-        audio(controls)
+        p.section-establishment__media-text Music for mood
+        audio(controls).section-establishment__audio.w-100
           source(type="audio/mp3" src="./assets/media/song.mp3")
-      .section-establishment__meet
+      .section-establishment__meet.bg-dark.text-white
         h4.section-establishment__meet-title Meet the Owners
         br
         p.section-establishment__meet-text John and Jane met on a backpacking adventure in Nepal. John, a former sheep shearer, went on the trip to get some clarity about his next adventures in life. Jane — a Peloton instructor — went on the trip to explore the landscape in Nepal.
