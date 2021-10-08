@@ -1,18 +1,18 @@
 mixin banner(args={})
-  - let infoHeader = args.infoHeader;
+  - let infoHeader = args.infoHeader || 'default text';
+  - let infoText = args.infoText || 'default text';
+  - let linkText = args.linkText || 'default text';
   - let rightMode = args.rightMode || false;
   - let widthMode = args.widthMode || false;
   - let colorMode = args.colorMode || false;
-  - let infoText = args.infoText;
-  - let linkText = args.linkText;
-  - let style = args.style;
-  - let src = args.src ;
+  - let style = args.style || false;
+  - let src = args.src || false;
 
   .c-banner.d-flex(style=style)
     .c-banner__wrapper.wrapper.d-flex(class=`${(rightMode ? 'c-banner__wrapper--width-mode text-end justify-content-end' : '') + ' ' + (widthMode ? 'c-banner__wrapper--width-mode' : '')}`)
-      .c-banner__info
-        h2.c-banner__info__title.d-inline-block=infoHeader
-        h4.c-banner__info__sub-title.d-inline-block=infoText
+      .c-banner__info.w-100
+        h2.c-banner__title.d-inline-block=infoHeader
+        h4.c-banner__sub-title.d-inline-block=infoText
         +link({
           href: './index.html',
           lightText: true,

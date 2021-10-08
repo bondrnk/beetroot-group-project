@@ -16,6 +16,30 @@
   font-weight: 700;
   font-style: normal;
 }
+@font-face {
+  font-family: "pacifico-regular";
+  src: url("./assets/fonts/pacifico/Pacifico-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "playfairdisplay-regular";
+  src: url("./assets/fonts/playfairdisplay/PlayfairDisplay-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "raleway-regular";
+  src: url("./assets/fonts/raleway/Raleway-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "roboto-regular";
+  src: url("./assets/fonts/roboto/Roboto-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -2514,21 +2538,9 @@ svg {
   min-height: 200px;
   background-color: #222222;
 }
-.c-footer__wrapper {
-  max-width: 1300px;
-  padding: 0 50px;
-  margin: 0 auto;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
 .c-footer__logo {
   width: 200px;
   height: 75px;
-}
-.c-footer__logo__wrapper {
-  width: 100%;
-  height: 100%;
 }
 .c-footer__top {
   padding-top: 25px;
@@ -2581,12 +2593,18 @@ svg {
   background-position: center center;
   min-height: 550px;
 }
+@media (max-width: 479px) {
+  .c-banner {
+    background-position: 0px 0px, 80% 50%;
+  }
+}
 .c-banner__wrapper {
   margin: 130px auto 0 auto;
 }
 @media (max-width: 479px) {
   .c-banner__wrapper {
-    margin: 200px auto 20px auto;
+    margin: 230px auto 50px auto;
+    padding: 0 20px;
   }
 }
 .c-banner__wrapper--width-mode .c-banner__info {
@@ -2595,59 +2613,38 @@ svg {
 .c-banner__wrapper--width-mode .c-banner__title {
   font-size: 2.8125em;
 }
+@media (max-width: 479px) {
+  .c-banner__wrapper--width-mode .c-banner__title {
+    font-size: 1.875em;
+    max-width: 100%;
+  }
+}
 .c-banner__wrapper--width-mode .c-banner__sub-title {
   max-width: 425px;
 }
 .c-banner__info {
   max-width: 420px;
-  width: 100%;
 }
-.c-banner__info__title {
-  font-family: "Sen-Bold";
+.c-banner__title {
+  font-family: "Sen-Bold", sans-serif;
   font-size: 3.875em;
   line-height: 1.3;
   margin: 0 0 20px;
 }
-@media (max-width: 767px) {
-  .c-banner__info__title {
-    font-size: 2.8125em;
-  }
-}
 @media (max-width: 479px) {
-  .c-banner__info__title {
+  .c-banner__title {
     font-size: 1.875em;
+    max-width: 160px;
   }
 }
-.c-banner__info__sub-title {
-  font-family: "Sen-Regular";
-  font-family: "Sen-Regular";
+.c-banner__title--display-none {
+  display: none;
+}
+.c-banner__sub-title {
+  font-family: "Sen-Regular", sans-serif;
   font-size: 1.125em;
   line-height: 1.5;
   margin-bottom: 30px;
-}
-@media (max-width: 479px) {
-  .c-banner__info__sub-title {
-    font-size: 0.8125em;
-  }
-}
-.c-banner .more-width .c-banner__info {
-  max-width: 550px;
-}
-.c-banner .more-width .c-banner__info__main-title {
-  font-size: 2.8125em;
-}
-@media (max-width: 479px) {
-  .c-banner .more-width .c-banner__info__main-title {
-    font-size: 1.875em;
-  }
-}
-.c-banner .more-width .c-banner__info__sub-title {
-  max-width: 420px;
-}
-@media (max-width: 479px) {
-  .c-banner .more-width .c-banner__info__sub-title {
-    font-size: 0.8125em;
-  }
 }
 
 .c-section-services {
@@ -2829,39 +2826,143 @@ svg {
 }
 
 .section-establishment {
-  padding: 50px 0;
+  padding: 65px 0;
 }
-.section-establishment__wrapper {
-  font-family: "Sen-Regular";
-  max-width: 1300px;
-  display: flex;
+@media (max-width: 1023px) {
+  .section-establishment {
+    padding: 0;
+  }
+}
+@media (max-width: 1023px) {
+  .section-establishment__wrapper {
+    flex-direction: column;
+  }
+}
+@media (max-width: 479px) {
+  .section-establishment__wrapper {
+    flex-direction: column;
+    padding: 0;
+  }
 }
 .section-establishment__media {
-  box-shadow: 1px 1px 25px 0px rgba(38, 38, 38, 0.3);
-  background-color: #fff;
   border-radius: 5px;
-  margin: 100px 0;
-  color: #262626;
+  margin: 50px 0;
   padding: 15px;
   z-index: 2;
+}
+@media (max-width: 1023px) {
+  .section-establishment__media {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    display: flex;
+    margin: 0;
+  }
+  .section-establishment__media iframe,
+.section-establishment__media video {
+    width: 100%;
+  }
+  .section-establishment__media iframe[poster],
+.section-establishment__media video[poster] {
+    height: 100%;
+    width: 100%;
+  }
+}
+@media (max-width: 1023px) and (max-width: 479px) {
+  .section-establishment__media video {
+    height: 100%;
+  }
 }
 .section-establishment__media-text {
   padding: 20px 0 10px;
 }
+.section-establishment__audio {
+  max-width: 320px;
+}
 .section-establishment__meet {
   padding: 85px 50px 85px 225px;
-  background-color: #262626;
   margin-left: -175px;
   border-radius: 5px;
-  color: #fff;
   z-index: 1;
 }
+@media (max-width: 1023px) {
+  .section-establishment__meet {
+    padding: 85px 45px;
+    margin-left: 0;
+  }
+}
+@media (max-width: 479px) {
+  .section-establishment__meet {
+    padding: 50px 25px;
+    margin-left: 0;
+  }
+}
 .section-establishment__meet-title {
-  font-family: "Sen-Bold";
-  font-size: 32px;
+  font-family: "Sen-Bold", sans-serif;
+  font-size: 1.875em;
 }
 .section-establishment__meet-text {
   padding-bottom: 10px;
+}
+
+.section-recommendation {
+  padding: 65px 0;
+}
+@media (max-width: 1023px) {
+  .section-recommendation {
+    padding: 0;
+  }
+}
+@media (max-width: 1023px) {
+  .section-recommendation__wrapper {
+    flex-direction: column;
+    margin-bottom: 40px;
+    padding: 0 40px;
+  }
+}
+@media (max-width: 479px) {
+  .section-recommendation__wrapper {
+    flex-direction: column;
+    margin-bottom: 10px;
+    padding: 0 10px;
+  }
+}
+.section-recommendation__photo {
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 35px 0;
+  z-index: 2;
+}
+.section-recommendation__photo img {
+  height: auto;
+}
+@media (max-width: 1219px) {
+  .section-recommendation__photo {
+    margin: auto 0;
+  }
+}
+.section-recommendation__info {
+  padding: 85px 50px 85px 225px;
+  margin-left: -165px;
+  border-radius: 10px;
+  z-index: 1;
+}
+@media (max-width: 1023px) {
+  .section-recommendation__info {
+    padding: 85px 40px;
+    margin-left: 0;
+  }
+}
+@media (max-width: 479px) {
+  .section-recommendation__info {
+    padding: 50px 25px;
+    margin-left: 0;
+  }
+}
+.section-recommendation__client {
+  font-family: "Sen-Bold", sans-serif;
+  font-size: 2.8125em;
 }
 
 .c-banner-contact-us {
