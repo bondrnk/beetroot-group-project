@@ -9,9 +9,17 @@
   &__wrapper {
     margin: 130px auto 0 auto;
 
+    @include media ('<tablet') {
+      flex-direction: column;
+    }
+
     @include media ('<phone'){
       margin: 230px auto 50px auto;
       padding: 0 20px;
+    }
+
+    &--logo-mode {
+      justify-content: space-between;
     }
 
     &--width-mode {
@@ -63,5 +71,22 @@
     font-size: em($fs-sub);
     line-height: $lh-big;
     margin-bottom: 30px;
+  }
+
+  &__img {
+    @include size(225);
+    overflow: hidden;
+
+    @include media ('<tablet') {
+      margin: 10px auto;
+    }
+
+    @include media ('<phone') {
+      display: none;
+    }
+
+    &--display-none {
+      display: none;
+    }
   }
 }
