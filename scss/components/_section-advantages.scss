@@ -1,0 +1,40 @@
+.c-section-advantages {
+  color: $c-black;
+
+  &__wrapper {
+    max-width: 1095px;
+    margin: 0px auto;
+  }
+
+  &__header {
+    position: relative;
+    margin-bottom: 55px;
+  }
+
+  &__title {
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: em($fs-soc-icon);
+    text-align: center;
+  }
+
+  &__subtitle {
+    font-size: em($fs-base);
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 35px;
+
+    @include media("<desktop") {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include media("<phone") {
+      grid-template-columns: 1fr;
+    }
+  }
+}

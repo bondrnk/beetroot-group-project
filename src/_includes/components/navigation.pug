@@ -1,16 +1,13 @@
 mixin navigation()
-
-  nav.c-navigation
-    ul.c-navigation__wrapper
-
-      li.c-navigation__item 
+  nav.c-navigation 
+    ul.c-navigation__list
+      li.c-navigation__item
         +link({
           href: './index.html',
           button: false,
           text: 'Home',
           lightText: true
         })
-
       li.c-navigation__item 
         +link({
           href: './about-us.html',
@@ -18,7 +15,6 @@ mixin navigation()
           text: 'About us',
           lightText: true
         })
-
       li.c-navigation__item 
         +link({
           href: './contact.html',

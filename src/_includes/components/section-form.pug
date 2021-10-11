@@ -1,0 +1,21 @@
+mixin section-form()
+  section.c-section-form
+    .c-section-form__wrapper.wrapper.d-flex
+      .c-section-form__contact-info
+        h4.c-section-form__title= 'Contact Us'
+        p.c-section-form__text
+          | Acme Outdoors
+          br
+          | 123 Rainy Street
+          br
+          | Oklahoma City, OK 73129
+        span
+          b General Inquiries: 
+          | (405) 555-5555
+        br
+        span
+          b Customer Support: 
+          | (405) 555-5556
+      .c-section-form__form
+        +form-contact()
+

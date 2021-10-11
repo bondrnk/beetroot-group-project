@@ -80,4 +80,71 @@
         font-family: $f-sen-regular;
         size: 16px;
     }
+  padding: 65px 0;
+
+  @include media ('<desktop'){
+    padding: 0;
+  }
+
+  //section-recommendation = WRAPPER
+  &__wrapper {
+
+    //mobile adaptability
+    @include media('<desktop') {
+      flex-direction: column;
+      margin-bottom: 40px;
+      padding: 0 40px;
+    }
+
+    @include media ('<phone'){
+      flex-direction: column;
+      margin-bottom: 10px;
+      padding: 0 10px;
+    }
+  }
+
+  //section-recommendation = WHITE BLOCK
+  //use for client photo only
+  &__photo {
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 35px 0;
+    z-index: 2;
+
+    img {
+      height: auto;
+    }
+
+    //mobile adaptability
+    @include media ('<1220px') {
+      margin: auto 0;
+    }
+  }
+
+  //section-recommendation = BLACK BLOCK
+  //use for recommendation text (incl. Client Name; Project & Recommendation Date; Recommendation Text)
+  &__info {
+    padding: 85px 50px 85px 225px;
+    margin-left: -165px;
+    border-radius: 10px;
+    z-index: 1;
+
+    //mobile adaptability
+    @include media ('<desktop') {
+      padding: 85px 40px;
+      margin-left: 0;
+    }
+
+    @include media ('<phone'){
+      padding: 50px 25px;
+      margin-left: 0;
+    }
+  }
+
+  //section-recommendation = Client Name
+  //adjusts client name display settings
+  &__client {
+    font-family: $f-sen-bold;
+    font-size: em($fs-h2);
+  }
 }

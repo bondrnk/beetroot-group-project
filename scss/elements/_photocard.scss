@@ -1,0 +1,51 @@
+.e-photocard {
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 5px;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  flex: 0 0 30%;
+
+  &:hover>&__photo{
+    transform: perspective(300px) rotateY(-180deg);}
+  &:hover>&__rear-photo{
+      transform: perspective(300px) rotateY(0deg);}
+
+  &__name {
+    font-family: $f-sen-regular;
+    font-size: em($fs-sub);
+    margin-top: 12px;
+    text-align: center;
+
+    @include media("<tablet") {
+      max-width: 100px;
+    }
+  }
+
+  &__photo{
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  max-width: 300px;
+  border-radius: 50%;
+  transition: $t-normal;
+  backface-visibility: hidden;
+  transform: perspective(300px) rotateY(0deg);
+
+  }
+  &__rear-photo{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border-radius: 50%;
+    transition: $t-normal;
+    backface-visibility: hidden;
+    transform: perspective(300px) rotateY(-180deg);
+    background-image: url(./assets/photos/Beetroot-Logo.png);
+}
+}
