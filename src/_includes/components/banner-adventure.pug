@@ -4,8 +4,10 @@ mixin banner-adventure()
       +banner({
         style: `background-image: linear-gradient(360deg, rgb(34, 34, 34), rgba(34, 34, 34, 0)), url('./assets/images/banner3.jpg')`,
         infoHeader: 'Your Adventure Awaits',
-        widthMode: true,
+        widthMode: false,
         infoText: "Acme Outdoors has everything you need to help you get started today. Check out our wonderful collection of gear that will make your next adventure complete.",
         linkText: 'Shop Merch',
-        displayMode: true
+        displayMode: true,
+        displaySubTitleMode: true,
+        linkNone: true,
       })

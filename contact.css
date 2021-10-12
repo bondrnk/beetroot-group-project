@@ -2329,14 +2329,14 @@ svg {
   display: inline-block;
 }
 .e-link--lighter-text {
-  color: #fff;
   padding: 5px 12px;
+  color: #fff;
 }
 .e-link--lighter-text:hover {
   border-radius: 5px;
   background-color: #262626;
-  color: #fff;
   transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  color: #fff;
 }
 .e-link--banner-style {
   background-color: transparent;
@@ -2357,14 +2357,17 @@ svg {
   color: #fff;
 }
 .e-link--button-red {
-  color: #fff;
   background-color: #f25252;
   border-radius: 5px;
   padding: 5px 25px;
   font-size: 0.875em;
+  color: #fff;
 }
 .e-link--button-red:hover {
   background-color: #262626;
+}
+.e-link--display-none {
+  display: none;
 }
 
 .e-burger-menu {
@@ -2651,13 +2654,16 @@ svg {
 .c-banner__sub-title {
   font-family: "Sen-Regular", sans-serif;
   font-size: 1.125em;
+  display: inline-block;
   line-height: 1.5;
   margin-bottom: 30px;
 }
+.c-banner__sub-title--display-none {
+  display: none;
+}
 .c-banner__img {
-  width: 225px;
-  height: 225px;
-  overflow: hidden;
+  width: 200px;
+  height: 200px;
 }
 @media (max-width: 767px) {
   .c-banner__img {
