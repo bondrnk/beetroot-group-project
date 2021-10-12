@@ -9,9 +9,17 @@
   &__wrapper {
     margin: 130px auto 0 auto;
 
+    @include media ('<tablet') {
+      flex-direction: column;
+    }
+
     @include media ('<phone'){
       margin: 230px auto 50px auto;
       padding: 0 20px;
+    }
+
+    &--logo-mode {
+      justify-content: space-between;
     }
 
     &--width-mode {
@@ -61,7 +69,28 @@
   &__sub-title {
     font-family: $f-sen-regular;
     font-size: em($fs-sub);
+    display: inline-block;
     line-height: $lh-big;
     margin-bottom: 30px;
+
+    &--display-none {
+      display: none;
+    }
+  }
+
+  &__img {
+    @include size(200);
+
+    @include media ('<tablet') {
+      margin: 10px auto;
+    }
+
+    @include media ('<phone') {
+      display: none;
+    }
+
+    &--display-none {
+      display: none;
+    }
   }
 }
