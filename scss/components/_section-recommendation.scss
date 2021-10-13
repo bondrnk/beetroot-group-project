@@ -1,40 +1,8 @@
 .section-recommendation {
-
-    padding: 165px 0;
-    flex-direction: column;
-    //mobile adaptability
-    @include media ('<desktop'){
-        padding: 0;
-    }
-
-    //section-recommendation = WRAPPER
-    &__wrapper {
-        font-family: "sen-regular";
-        display: flex;
-    }
-    //mobile adaptability
-    @include media('<desktop') {
-        padding: 0;
-        flex-direction: column;
-        
-    }
-
-    //section-recommendation = Project & Recommendation Date 
-    //adjusts project name and recommendation date display settings
-    &__recommendationdata {
-        font-family: $f-sen-regular;
-        size: 16px;
-        color: $c-white;
-    }
-
-    //section-recommendation = Recommendation Text 
-    //adjusts recommendation text display settings
-    &__recommendationtext {
-        font-family: $f-sen-regular;
-        size: 16px;
-    }
   padding: 65px 0;
+  overflow-x: hidden;
 
+  //mobile adaptability
   @include media ('<desktop'){
     padding: 0;
   }
@@ -45,34 +13,22 @@
     //mobile adaptability
     @include media('<desktop') {
       flex-direction: column;
-      margin-bottom: 40px;
-      padding: 0 40px;
+      margin-bottom: 50px;
     }
 
     @include media ('<phone'){
       flex-direction: column;
-      margin-bottom: 10px;
-      padding: 0 10px;
+      margin-bottom: 20px;
     }
   }
 
   //section-recommendation = WHITE BLOCK
   //use for client photo only
   &__photo {
-    height: 100%;
     border-radius: 10px;
     overflow: hidden;
-    margin: 35px 0;
+    margin: auto 0;
     z-index: 2;
-
-    img {
-      height: auto;
-    }
-
-    //mobile adaptability
-    @include media ('<1220px') {
-      margin: auto 0;
-    }
   }
 
   //section-recommendation = BLACK BLOCK
@@ -101,4 +57,4 @@
     font-family: $f-sen-bold;
     font-size: em($fs-h2);
   }
-};
+}
