@@ -2480,7 +2480,6 @@ svg {
 }
 .e-advantage-item__text {
   font-weight: 100;
-  font-size: 1em;
   line-height: 26px;
 }
 .e-advantage-item__svg {
@@ -2939,33 +2938,8 @@ svg {
 }
 
 .section-recommendation {
-  padding: 165px 0;
-  flex-direction: column;
   padding: 65px 0;
-}
-@media (max-width: 1023px) {
-  .section-recommendation {
-    padding: 0;
-  }
-}
-.section-recommendation__wrapper {
-  font-family: "sen-regular";
-  display: flex;
-}
-@media (max-width: 1023px) {
-  .section-recommendation {
-    padding: 0;
-    flex-direction: column;
-  }
-}
-.section-recommendation__recommendationdata {
-  font-family: "Sen-Regular", sans-serif;
-  size: 16px;
-  color: #fff;
-}
-.section-recommendation__recommendationtext {
-  font-family: "Sen-Regular", sans-serif;
-  size: 16px;
+  overflow-x: hidden;
 }
 @media (max-width: 1023px) {
   .section-recommendation {
@@ -2975,31 +2949,20 @@ svg {
 @media (max-width: 1023px) {
   .section-recommendation__wrapper {
     flex-direction: column;
-    margin-bottom: 40px;
-    padding: 0 40px;
+    margin-bottom: 50px;
   }
 }
 @media (max-width: 479px) {
   .section-recommendation__wrapper {
     flex-direction: column;
-    margin-bottom: 10px;
-    padding: 0 10px;
+    margin-bottom: 20px;
   }
 }
 .section-recommendation__photo {
-  height: 100%;
   border-radius: 10px;
   overflow: hidden;
-  margin: 35px 0;
+  margin: auto 0;
   z-index: 2;
-}
-.section-recommendation__photo img {
-  height: auto;
-}
-@media (max-width: 1219px) {
-  .section-recommendation__photo {
-    margin: auto 0;
-  }
 }
 .section-recommendation__info {
   padding: 85px 50px 85px 225px;
