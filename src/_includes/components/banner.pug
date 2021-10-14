@@ -19,5 +19,11 @@ mixin banner(args={})
           button: false,
           text: linkText,
           bannerStyle: true,
-          bannerStyleRed: colorMode
+          bannerStyleRed: colorMode,
+          linkMode: linkNone,
+        })
+      .c-banner__img(class=`${(displayMode ? 'c-banner__img--display-none' : ' ')}`)
+        +image({
+          src: './assets/images/logobanner.png',
+          alt: 'logo-b'
         })
