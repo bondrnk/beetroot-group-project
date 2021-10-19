@@ -1,24 +1,40 @@
 .c-banner {
   @include backgroundCoverCenter;
   min-height: 550px;
-
+  
   &__wrapper {
     margin: 130px auto 0 auto;
 
     @include media ('<phone'){
-      margin: 200px auto 20px auto;
+      margin: 230px auto 50px auto;
+      padding: 0 20px;
+    }
+
+    &--logo-mode {
+      justify-content: space-between;
+
+      @include media ('<tablet') {
+        flex-direction: column;
+      }
     }
 
     &--width-mode {
+
       .c-banner {
+
         &__info {
           max-width: 535px;
         }
-
+        
         &__title {
           font-size: em($fs-h2);
-        }
 
+          @include media ('<phone'){
+            font-size: em($fs-soc-icon);
+            max-width: 100%;
+          }
+        }
+  
         &__sub-title {
           max-width: 425px;
         }
@@ -28,56 +44,49 @@
 
   &__info {
     max-width: 420px;
-    width: 100%;
+  }
 
-    &__title {
-      font-family: "Sen-Bold";
-      font-size: em($fs-h1);
-      line-height: $lh-base;
-      margin: 0 0 20px;
+  &__title {
+    font-family: $f-sen-bold;
+    font-size: em($fs-h1);
+    line-height: $lh-base;
+    margin: 0 0 20px;
 
-      @include media ('<tablet'){
-        font-size: em($fs-h2);
-      }
-
-      @include media ('<phone'){
-        font-size: em($fs-soc-icon);
-      }
+    @include media ('<phone'){
+      font-size: em($fs-soc-icon);
+      max-width: 160px;
     }
 
-    &__sub-title {
-      font-family: "Sen-Regular";
-        font-family: "Sen-Regular";
-        font-size: em($fs-sub);
-        line-height: $lh-big;
-        margin-bottom: 30px;
-
-        @include media ('<phone'){
-          font-size: em($fs-lowRes);
-        }
-      }
-    }
-
-    .more-width {
-      .c-banner__info {
-        max-width: 550px;
-
-        &__main-title {
-          font-size: em($fs-h2);
-
-          @include media ('<phone'){
-            font-size: em($fs-soc-icon);
-          }
-        }
-
-        &__sub-title {
-          max-width: 420px;
-          
-          @include media ('<phone'){
-            font-size: em($fs-lowRes);
-          }
-        
-        }
-      }
+    &--display-none {
+      display: none;
     }
   }
+
+  &__sub-title {
+    font-family: $f-sen-regular;
+    font-size: em($fs-sub);
+    display: inline-block;
+    line-height: $lh-big;
+    margin-bottom: 30px;
+
+    &--display-none {
+      display: none;
+    }
+  }
+
+  &__img {
+    @include size(200);
+
+    @include media ('<tablet') {
+      margin: 10px auto;
+    }
+
+    @include media ('<phone') {
+      display: none;
+    }
+
+    &--display-none {
+      display: none;
+    }
+  }
+}

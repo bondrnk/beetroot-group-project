@@ -1,9 +1,9 @@
-.section-advantages {
+.c-section-advantages {
   color: $c-black;
 
   &__wrapper {
     max-width: 1095px;
-    margin: 0px auto;
+    margin: 20px auto;
   }
 
   &__header {
@@ -24,45 +24,17 @@
     text-align: center;
   }
 
-  &__row {
-    flex-wrap: wrap;
-    justify-items: center;
-    display: flex;
-  }
-
-  &__column {
-    flex: 0 0 25%;
-    margin-bottom: 50px;
-    padding: 0 35px;
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 35px;
 
     @include media("<desktop") {
-      flex: 1 0 50%;
-      min-width: 250px;
-      text-align: center;
-      padding: 0;
+      grid-template-columns: repeat(2, 1fr);
     }
-  }
-}
 
-.item-advantages {
-  &__icon {
-    margin-bottom: 15px;
-    display: inline-block;
-    width: 2.5em;
-    height: 2.5em;
-    stroke-width: 0;
-    fill: $c-light-red;
-  }
-
-  &__title {
-    font-weight: 600;
-    font-size: em($fs-1-5em);
-    margin-bottom: 15px;
-  }
-
-  &__text {
-    font-weight: 100;
-    font-size: em($fs-base);
-    line-height: 26px;
+    @include media("<phone") {
+      grid-template-columns: 1fr;
+    }
   }
 }

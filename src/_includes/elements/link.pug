@@ -1,20 +1,19 @@
 mixin link(args)
   - let href = args.href || '#';
-  // TODO buttonMode
   - let button = args.button || false;
   - let buttonColor = args.buttonColor || 'white';
   - let text = args.text || 'Default link text';
   - let lightText = args.lightText || false;
-  - let bannerStyle = args.bannerStyle || false;
   - let bannerStyleRed = args.bannerStyleRed || false;
+  - let bannerStyle = args.bannerStyle || false;
+  - let linkMode = args.linkMode || false;
   - let endIcon = args.endIcon || false;
-  - let classList = `${(button ? 'e-link--button' + ' ' + (buttonColor ? 'e-link--button-' + buttonColor : '') : '') + ' ' + (lightText ? 'e-link--lighter-text' : '') + ' ' + (bannerStyle ? 'e-link--banner-style' : '') + ' ' + (bannerStyle ? 'e-link--banner-style' + ' ' + (bannerStyleRed ? 'e-link--banner-style-red' : '') : '')}`
+  - let classList = `${(button ? 'e-link--button' + ' ' + (buttonColor ? 'e-link--button-' + buttonColor : '') : '') + ' ' + (lightText ? 'e-link--lighter-text' : '') + ' ' + (bannerStyle ? 'e-link--banner-style' : '') + ' ' + (bannerStyle ? 'e-link--banner-style' + ' ' + (bannerStyleRed ? 'e-link--banner-style-red' : '') : '') + ' ' + (linkMode ? 'e-link--display-none' : '')}`
 
-  a.e-link.d-inline-block(href=href class=classList)
+  a.e-link(href=href class=classList)
     span=text 
 
     //- Arrow svg
     if endIcon
       svg.e-link__svg.icon
         use(xlink:href="#icon-arrow")
-
