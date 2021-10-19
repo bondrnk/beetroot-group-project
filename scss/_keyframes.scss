@@ -6,6 +6,16 @@
     transform: rotate(360deg);
   }
 }
+
+@keyframes spin-reverse {
+  from {
+    transform: rotate(45deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
 @keyframes typewriter {
   to {
     left: 100%;
