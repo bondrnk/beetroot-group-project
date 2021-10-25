@@ -1,47 +1,59 @@
 :root{
---typewriterSpeed: 6s;
---typewriterCharacters: 15;
---bg-color: white;
-}
-
-.c-service-card {
-  background-color: $c-darker-grey;
-  font-family: $f-sen-bold;
-  justify-content: center;
-  font-size: em($fs-h2);
-  align-items: center;
-  border-radius: 10px;
-  margin-bottom: 50px;
-  position: relative;
-  min-height: 300px;
-  overflow: hidden;
-  color: $c-white;
-  cursor: pointer;
-  display: flex;
-  width: 100%;
-
-  &__number {
-    position: absolute;
-    font-size: em(14);
-    left: 30px;
-    top: 30px;
-    opacity: 0;
-    transform: translateY(3rem);
-    animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
+  --typewriterSpeed: 6s;
+  --typewriterCharacters: 15;
+  --bg-color: white;
   }
-  &__title {
-    font-size: em(14);
-    text-align: center;
+  
+  .c-service-card {
+    background-color: $c-darker-grey;
+    font-family: $f-sen-bold;
+    justify-content: center;
+    font-size: em($fs-h2);
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    position: relative;
+    min-height: 300px;
+    overflow: hidden;
+    color: $c-white;
+    cursor: pointer;
+    display: flex;
+    width: 100%;
+  
+    &__item {
+      width: 100%;
+      padding: 0 10px;
+      max-width: 320px;
+  
+        @include media("<desktop") {
+          width: 100%;
+          margin-bottom: 40px;
+          max-width: 700px;
+        }
+    }
+  
+    &__number {
+      position: absolute;
+      font-size: em(14);
+      left: 30px;
+      top: 30px;
+      opacity: 0;
+      transform: translateY(3rem);
+      animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
+    }
+    &__title {
+      font-size: em(14);
+      text-align: center;
+    }
+    &__icon {
+      width: 150px;
+      height: 150px;
+      padding: 5px;
+      position: absolute;
+      right: -40px;
+      bottom: -60px;
+    }
   }
-  &__icon {
-    width: 150px;
-    height: 150px;
-    padding: 5px;
-    position: absolute;
-    right: -40px;
-    bottom: -60px;
+  #icon-rectangle {
+    fill: none;
   }
-}
-#icon-rectangle {
-  fill: none;
-}

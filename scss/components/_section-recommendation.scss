@@ -1,0 +1,60 @@
+.section-recommendation {
+  padding: 65px 0;
+  overflow-x: hidden;
+
+  //mobile adaptability
+  @include media ('<desktop'){
+    padding: 0;
+  }
+
+  //section-recommendation = WRAPPER
+  &__wrapper {
+
+    //mobile adaptability
+    @include media('<desktop') {
+      flex-direction: column;
+      margin-bottom: 50px;
+    }
+
+    @include media ('<phone'){
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+  }
+
+  //section-recommendation = WHITE BLOCK
+  //use for client photo only
+  &__photo {
+    border-radius: 10px;
+    overflow: hidden;
+    margin: auto 0;
+    z-index: 2;
+  }
+
+  //section-recommendation = BLACK BLOCK
+  //use for recommendation text (incl. Client Name; Project & Recommendation Date; Recommendation Text)
+  &__info {
+    padding: 85px 50px 85px 225px;
+    margin-left: -165px;
+    border-radius: 10px;
+    z-index: 1;
+
+    //mobile adaptability
+    @include media ('<desktop') {
+      padding: 85px 40px;
+      margin-left: 0;
+    }
+
+    @include media ('<phone'){
+      padding: 50px 25px;
+      margin-left: 0;
+    }
+  }
+
+  //section-recommendation = Client Name
+  //adjusts client name display settings
+  &__client {
+    font-family: $f-sen-bold;
+    font-size: em($fs-h2);
+  }
+}

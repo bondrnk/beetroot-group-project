@@ -1,8 +1,8 @@
 mixin section-services()
-
   section.c-section-services
     .c-section-services__wrapper.wrapper
       .c-section-services__info
+
         //- Title
         .c-section-services__info__title
           p.type-animation WAYS TO SUPPORT 
@@ -10,34 +10,24 @@ mixin section-services()
         .c-section-services__info__subtitle
           p COVID-19 has forced us to close our retail space, but we need support from patrons like yourself now more than ever. Below, we’ve listed the best ways to help us through this season.
 
-      //- Section content
-      .c-service-content
-        .c-service-content__wrapper
-          //- first
-          .c-service-content__item
-            .c-service-content__service-card
-              +service-card({
-                number:'01',
-                text:'SHOP PRODUCTS',
-                svg:'circle'
-                })
-            p.c-service-content__description Our full product line is still available online here on our site! Getting outside and hiking is still something you can do. Get your gear now!
-          //- second
-          .c-service-content__item
-            .c-service-content__service-card
-              +service-card({
-                number:'02',
-                text:'DONATE',
-                svg:'rectangle'
-                })   
-            p.c-service-content__description Since we've changed the way we operate to online only, and to ensure your safety, not all our staff is working. Donate to keep them afloat.
-          //- three
-          .c-service-content__item
-            .c-service-content__service-card
-              +service-card({
-                number:'03',
-                text:'BUY GIFT CARDS',
-                svg:'triangle'
+        //- Section content
+      .c-section-services__cards
+        .c-section-services__cards__wrapper
+            +service-card({
+              number:'01',
+              text:'SHOP PRODUCTS',
+              svg:'circle',
+              descriptionText:'Our full product line is still available online here on our site! Getting outside and hiking is still something you can do. Get your gear now!'
+            })
+            +service-card({
+              number:'02',
+              text:'DONATE',
+              svg:'rectangle',
+              descriptionText:'Since we\'ve changed the way we operate to online only, and to ensure your safety, not all our staff is working. Donate to keep them afloat.'
+            })           
+            +service-card({
+              number:'03',
+              text:'BUY GIFT CARDS',
+              svg:'triangle',
+              descriptionText:'Have all the outdoor gear you need for now? Buy a gift card and use it later or share it with friends and family.'
               })
-            p.c-service-content__description Have all the outdoor gear you need for now? Buy a gift card and use it later or share it with friends and family.
-

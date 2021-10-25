@@ -1,18 +1,16 @@
 .e-link {
-  // width: 100%;
-  // height: 100%;
   transition: $t-normal;
   display: inline-block;
 
   &--lighter-text {
-    color: $c-white;
     padding: 5px 12px;
+    color: $c-white;
 
     &:hover {
       border-radius: 5px;
       background-color: $c-darker-grey;
-      color: $c-white;
       transition: $t-normal;
+      color: $c-white;
     }
   }
 
@@ -36,5 +34,21 @@
         color: $c-white;
       }
     }
+  }
+
+  &--button-red {
+    background-color: $c-light-red;
+    border-radius: 5px;
+    padding: 5px 25px;
+    font-size: em(14);
+    color: $c-white;
+
+    &:hover {
+      background-color: $c-darker-grey;
+    }
+  }
+
+  &--display-none {
+    display: none;
   }
 }

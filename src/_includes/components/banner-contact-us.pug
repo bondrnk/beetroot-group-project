@@ -1,11 +1,9 @@
-mixin banner-contact-us(args)
-
-
-
+mixin banner-contact-us()
   .c-banner-contact-us
     +banner({
-        style: 'background-position: 0px 0px, 80% 50%; background-image: linear-gradient(360deg, rgb(34, 34, 34), rgba(34, 34, 34, 0)), url(./assets/images/section-contact-us.jpg)',
-        infoHeader: 'Need Help?',
-        linkText: 'Contact Support',
-        infoText: "Need help or assistance? Our team is standing by to make sure you get the help you need. Whether you need to adjust an order or delivery details, we're ready to help!"
+      style: `margin-top:100px; background-image: linear-gradient(360deg,rgb(34, 34, 34),rgba(34,34, 34, 0)), url(./assets/images/banner4.jpg); background-position: 0px 0px, 80% 50%;`,
+      infoHeader: 'Need Help?',
+      linkText: 'Contact Support',
+      infoText: "Need help or assistance? Our team is standing by to make sure you get the help you need. Whether you need to adjust an order or delivery details, we're ready to help!",
+      displayMode: true
     })
