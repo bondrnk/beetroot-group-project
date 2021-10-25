@@ -14,7 +14,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // TODO move to global wrapper(its already there O_O)
     margin: 0 auto;
   }
 
@@ -28,13 +27,8 @@
   &__navigation{
     width: fit-content;
     height: 50px;
-
-    &__wrapper{
-      height: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
